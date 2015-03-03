@@ -1,6 +1,0 @@
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Collections\bin\Debug\Z.Collections.XML
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Collections\bin\Debug\Z.Collections.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Collections\bin\Debug\Z.Collections.pdb
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Collections\obj\Debug\Z.Collections.csprojResolveAssemblyReference.cache
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Collections\obj\Debug\Z.Collections.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Collections\obj\Debug\Z.Collections.pdb

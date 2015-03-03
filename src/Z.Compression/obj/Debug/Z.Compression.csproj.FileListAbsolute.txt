@@ -1,5 +1,0 @@
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Compression\bin\Debug\Z.Compression.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Compression\bin\Debug\Z.Compression.pdb
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Compression\obj\Debug\Z.Compression.csprojResolveAssemblyReference.cache
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Compression\obj\Debug\Z.Compression.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Compression\obj\Debug\Z.Compression.pdb

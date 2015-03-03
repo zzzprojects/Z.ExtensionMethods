@@ -1,7 +1,0 @@
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\bin\Debug\Z.ExtensionMethods.WithNamespace.dll.config
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\bin\Debug\Z.ExtensionMethods.WithNamespace.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\bin\Debug\Z.ExtensionMethods.WithNamespace.pdb
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\bin\Debug\System.Data.SQLite.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\bin\Debug\System.Data.SQLite.xml
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\obj\Debug\Z.ExtensionMethods.WithNamespace.dll
-C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithNamespace.NET40\obj\Debug\Z.ExtensionMethods.WithNamespace.pdb
