@@ -1,0 +1,9 @@
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\bin\Debug\Z.ExtensionMethods.WithOneNamespace.dll.config
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\bin\Debug\Z.ExtensionMethods.WithOneNamespace.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\bin\Debug\Z.ExtensionMethods.WithOneNamespace.pdb
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\bin\Debug\MySql.Data.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\bin\Debug\System.Data.SQLite.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\bin\Debug\System.Data.SQLite.xml
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\obj\Debug\Z.ExtensionMethods.WithOneNamespace.NET45.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\obj\Debug\Z.ExtensionMethods.WithOneNamespace.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\generated\Z.ExtensionMethods.WithOneNamespace.NET45\obj\Debug\Z.ExtensionMethods.WithOneNamespace.pdb

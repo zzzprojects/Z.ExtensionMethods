@@ -1,0 +1,2121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Z.Data</name>
+    </assembly>
+    <members>
+        <member name="M:Extensions.ToDbParameters(System.Collections.Generic.IDictionary{System.String,System.Object},System.Data.Common.DbCommand)">
+            <summary>
+                An IDictionary&lt;string,object&gt; extension method that converts this object to a database parameters.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="command">The command.</param>
+            <returns>The given data converted to a DbParameter[].</returns>
+        </member>
+        <member name="M:Extensions.ToDbParameters(System.Collections.Generic.IDictionary{System.String,System.Object},System.Data.Common.DbConnection)">
+            <summary>
+                An IDictionary&lt;string,object&gt; extension method that converts this object to a database parameters.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="connection">The connection.</param>
+            <returns>The given data converted to a DbParameter[].</returns>
+        </member>
+        <member name="M:Extensions.ToSqlParameters(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+                An IDictionary&lt;string,object&gt; extension method that converts the @this to a SQL parameters.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as a SqlParameter[].</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbCommand)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbCommand)">
+            <summary>
+                A DbCommand extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbCommand)">
+            <summary>
+                A DbCommand extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbCommand)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.Common.DbCommand)">
+            <summary>
+                A DbCommand extension method that executes the scalar as operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAsOrDefault``1(System.Data.Common.DbCommand)">
+            <summary>
+                A DbCommand extension method that executes the scalar as or default operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAsOrDefault``1(System.Data.Common.DbCommand,``0)">
+            <summary>
+                A DbCommand extension method that executes the scalar as or default operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAsOrDefault``1(System.Data.Common.DbCommand,System.Func{System.Data.Common.DbCommand,``0})">
+            <summary>
+                A DbCommand extension method that executes the scalar as or default operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="defaultValueFactory">The default value factory.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.Common.DbCommand)">
+            <summary>
+                A DbCommand extension method that executes the scalar to operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarToOrDefault``1(System.Data.Common.DbCommand)">
+            <summary>
+                A DbCommand extension method that executes the scalar to or default operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarToOrDefault``1(System.Data.Common.DbCommand,``0)">
+            <summary>
+                A DbCommand extension method that executes the scalar to or default operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarToOrDefault``1(System.Data.Common.DbCommand,System.Func{System.Data.Common.DbCommand,``0})">
+            <summary>
+                A DbCommand extension method that executes the scalar to or default operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="defaultValueFactory">The default value factory.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.IsNotConnectionOpen(System.Data.Common.DbConnection)">
+            <summary>A DbConnection extension method that queries if a not connection is open.</summary>
+            <param name="this">The @this to act on.</param>
+            <returns>true if a not connection is open, false if not.</returns>
+        </member>
+        <member name="M:Extensions.IsConnectionOpen(System.Data.Common.DbConnection)">
+            <summary>A DbConnection extension method that queries if a connection is open.</summary>
+            <param name="this">The @this to act on.</param>
+            <returns>true if a connection is open, false if not.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A DbDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.Action{System.Data.Common.DbCommand})">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.CommandType,System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[])">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.Common.DbTransaction)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.Common.DbConnection,System.String,System.Data.Common.DbParameter[],System.Data.CommandType)">
+            <summary>
+                A DbConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.In(System.Data.ConnectionState,System.Data.ConnectionState[])">
+            <summary>
+                A ConnectionState extension method that insert.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="values">A variable-length parameters list containing values.</param>
+            <returns>true if it succeeds, false if it fails.</returns>
+        </member>
+        <member name="M:Extensions.NotIn(System.Data.ConnectionState,System.Data.ConnectionState[])">
+            <summary>
+                A ConnectionState extension method that not in.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="values">A variable-length parameters list containing values.</param>
+            <returns>true if it succeeds, false if it fails.</returns>
+        </member>
+        <member name="M:Extensions.AddRange(System.Data.DataColumnCollection,System.String[])">
+            <summary>
+                A DataColumnCollection extension method that adds a range to 'columns'.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="columns">A variable-length parameters list containing columns.</param>
+        </member>
+        <member name="M:Extensions.ToEntity``1(System.Data.DataRow)">
+            <summary>
+                A DataRow extension method that converts the @this to the entities.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as a T.</returns>
+        </member>
+        <member name="M:Extensions.ToExpandoObject(System.Data.DataRow)">
+            <summary>A DataRow extension method that converts the @this to an expando object.</summary>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as a dynamic.</returns>
+        </member>
+        <member name="M:Extensions.LastRow(System.Data.DataTable)">
+            <summary>A DataTable extension method that last row.</summary>
+            <param name="this">The @this to act on.</param>
+            <returns>A DataRow.</returns>
+        </member>
+        <member name="M:Extensions.FirstRow(System.Data.DataTable)">
+            <summary>
+                A DataTable extension method that return the first row.
+            </summary>
+            <param name="this">The table to act on.</param>
+            <returns>The first row of the table.</returns>
+        </member>
+        <member name="M:Extensions.ToEntities``1(System.Data.DataTable)">
+            <summary>
+                Enumerates to entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as an IEnumerable&lt;T&gt;</returns>
+        </member>
+        <member name="M:Extensions.ToExpandoObjects(System.Data.DataTable)">
+            <summary>
+                Enumerates to expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as an IEnumerable&lt;dynamic&gt;</returns>
+            ###
+            <typeparam name="T">Generic type parameter.</typeparam>
+        </member>
+        <member name="M:Extensions.ContainsColumn(System.Data.IDataReader,System.Int32)">
+            <summary>
+                An IDataReader extension method that query if '@this' contains column.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="columnIndex">Zero-based index of the column.</param>
+            <returns>true if it succeeds, false if it fails.</returns>
+        </member>
+        <member name="M:Extensions.ContainsColumn(System.Data.IDataReader,System.String)">
+            <summary>
+                An IDataReader extension method that query if '@this' contains column.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>true if it succeeds, false if it fails.</returns>
+        </member>
+        <member name="M:Extensions.ForEach(System.Data.IDataReader,System.Action{System.Data.IDataReader})">
+            <summary>
+                An IDataReader extension method that applies an operation to all items in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="action">The action.</param>
+            <returns>An IDataReader.</returns>
+        </member>
+        <member name="M:Extensions.GetColumnNames(System.Data.IDataRecord)">
+            <summary>
+                Gets the column names in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>An enumerator that allows foreach to be used to get the column names in this collection.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAs``1(System.Data.IDataReader,System.Int32)">
+            <summary>
+                An IDataReader extension method that gets value as.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <returns>The value as.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAs``1(System.Data.IDataReader,System.String)">
+            <summary>
+                An IDataReader extension method that gets value as.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>The value as.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAsOrDefault``1(System.Data.IDataReader,System.Int32)">
+            <summary>
+                An IDataReader extension method that gets value as or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <returns>The value as or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAsOrDefault``1(System.Data.IDataReader,System.Int32,``0)">
+            <summary>
+                An IDataReader extension method that gets value as or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>The value as or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAsOrDefault``1(System.Data.IDataReader,System.Int32,System.Func{System.Data.IDataReader,System.Int32,``0})">
+            <summary>
+                An IDataReader extension method that gets value as or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <param name="defaultValueFactory">The default value factory.</param>
+            <returns>The value as or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAsOrDefault``1(System.Data.IDataReader,System.String)">
+            <summary>
+                An IDataReader extension method that gets value as or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>The value as or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAsOrDefault``1(System.Data.IDataReader,System.String,``0)">
+            <summary>
+                An IDataReader extension method that gets value as or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>The value as or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueAsOrDefault``1(System.Data.IDataReader,System.String,System.Func{System.Data.IDataReader,System.String,``0})">
+            <summary>
+                An IDataReader extension method that gets value as or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <param name="defaultValueFactory">The default value factory.</param>
+            <returns>The value as or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueTo``1(System.Data.IDataReader,System.Int32)">
+            <summary>
+                An IDataReader extension method that gets value to.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <returns>The value to.</returns>
+        </member>
+        <member name="M:Extensions.GetValueTo``1(System.Data.IDataReader,System.String)">
+            <summary>
+                An IDataReader extension method that gets value to.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>The value to.</returns>
+        </member>
+        <member name="M:Extensions.GetValueToOrDefault``1(System.Data.IDataReader,System.Int32)">
+            <summary>
+                An IDataReader extension method that gets value to or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <returns>The value to or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueToOrDefault``1(System.Data.IDataReader,System.Int32,``0)">
+            <summary>
+                An IDataReader extension method that gets value to or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>The value to or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueToOrDefault``1(System.Data.IDataReader,System.Int32,System.Func{System.Data.IDataReader,System.Int32,``0})">
+            <summary>
+                An IDataReader extension method that gets value to or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="index">Zero-based index of the.</param>
+            <param name="defaultValueFactory">The default value factory.</param>
+            <returns>The value to or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueToOrDefault``1(System.Data.IDataReader,System.String)">
+            <summary>
+                An IDataReader extension method that gets value to or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>The value to or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueToOrDefault``1(System.Data.IDataReader,System.String,``0)">
+            <summary>
+                An IDataReader extension method that gets value to or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>The value to or default.</returns>
+        </member>
+        <member name="M:Extensions.GetValueToOrDefault``1(System.Data.IDataReader,System.String,System.Func{System.Data.IDataReader,System.String,``0})">
+            <summary>
+                An IDataReader extension method that gets value to or default.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="columnName">Name of the column.</param>
+            <param name="defaultValueFactory">The default value factory.</param>
+            <returns>The value to or default.</returns>
+        </member>
+        <member name="M:Extensions.IsDBNull(System.Data.IDataReader,System.String)">
+            <summary>
+                An IDataReader extension method that query if '@this' is database null.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="name">The name.</param>
+            <returns>true if database null, false if not.</returns>
+        </member>
+        <member name="M:Extensions.ToDataTable(System.Data.IDataReader)">
+            <summary>
+                An IDataReader extension method that converts the @this to a data table.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as a DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ToEntities``1(System.Data.IDataReader)">
+            <summary>
+                Enumerates to entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as an IEnumerable&lt;T&gt;</returns>
+        </member>
+        <member name="M:Extensions.ToEntity``1(System.Data.IDataReader)">
+            <summary>
+                An IDataReader extension method that converts the @this to an entity.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as a T.</returns>
+        </member>
+        <member name="M:Extensions.ToExpandoObject(System.Data.IDataReader)">
+            <summary>
+                An IDataReader extension method that converts the @this to an expando object.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as a dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ToExpandoObjects(System.Data.IDataReader)">
+            <summary>
+                Enumerates to expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>@this as an IEnumerable&lt;dynamic&gt;</returns>
+        </member>
+        <member name="M:Extensions.EnsureOpen(System.Data.IDbConnection)">
+            <summary>
+                An IDbConnection extension method that ensures that open.
+            </summary>
+            <param name="this">The @this to act on.</param>
+        </member>
+        <member name="M:Extensions.GetConnection(System.Data.SqlClient.SqlBulkCopy)">
+            <summary>A SqlBulkCopy extension method that gets a connection.</summary>
+            <param name="this">The @this to act on.</param>
+            <returns>The connection.</returns>
+        </member>
+        <member name="M:Extensions.GetTransaction(System.Data.SqlClient.SqlBulkCopy)">
+            <summary>A SqlBulkCopy extension method that gets a transaction.</summary>
+            <param name="this">The @this to act on.</param>
+            <returns>The transaction.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlCommand)">
+            <summary>
+                Executes the query, and returns the result set as DataSet.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>A DataSet that is equivalent to the result set.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlCommand)">
+            <summary>
+                Executes the query, and returns the first result set as DataTable.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>A DataTable that is equivalent to the first result set.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataSet(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the data set operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A DataSet.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteDataTable(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the data table operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A DataTable.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntities``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                Enumerates execute entities in this collection.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An enumerator that allows foreach to be used to process execute entities in this collection.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteEntity``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the entity operation.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A T.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObject(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the expando object operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A dynamic.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteExpandoObjects(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                Enumerates execute expando objects in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>
+                An enumerator that allows foreach to be used to process execute expando objects in this collection.
+            </returns>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+        </member>
+        <member name="M:Extensions.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the non query operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A SqlDataReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarAs``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteScalarTo``1(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the scalar operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An object.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.Action{System.Data.SqlClient.SqlCommand})">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="commandFactory">The command factory.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.CommandType,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="commandType">Type of the command.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.SqlClient.SqlTransaction)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="transaction">The transaction.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Data.CommandType)">
+            <summary>
+                A SqlConnection extension method that executes the XML reader operation.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="cmdText">The command text.</param>
+            <param name="parameters">Options for controlling the operation.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An XmlReader.</returns>
+        </member>
+        <member name="M:Extensions.AddRangeWithValue(System.Data.SqlClient.SqlParameterCollection,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+                A SqlParameterCollection extension method that adds a range with value to 'values'.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <param name="values">The values.</param>
+        </member>
+    </members>
+</doc>

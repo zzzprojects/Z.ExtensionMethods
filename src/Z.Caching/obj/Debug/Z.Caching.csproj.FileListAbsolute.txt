@@ -1,0 +1,6 @@
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Caching\bin\Debug\Z.Caching.XML
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Caching\bin\Debug\Z.Caching.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Caching\bin\Debug\Z.Caching.pdb
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Caching\obj\Debug\Z.Caching.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Caching\obj\Debug\Z.Caching.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Caching\obj\Debug\Z.Caching.pdb

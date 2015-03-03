@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Z.Caching</name>
+    </assembly>
+    <members>
+        <member name="M:Extensions.AddOrGetExisting``1(System.Runtime.Caching.MemoryCache,System.String,``0)">
+            <summary>A MemoryCache extension method that adds an or get existing.</summary>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="cache">The cache to act on.</param>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.AddOrGetExisting``1(System.Runtime.Caching.MemoryCache,System.String,System.Func{System.String,``0})">
+            <summary>A MemoryCache extension method that adds an or get existing.</summary>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="cache">The cache to act on.</param>
+            <param name="key">The key.</param>
+            <param name="valueFactory">The value factory.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.AddOrGetExisting``1(System.Runtime.Caching.MemoryCache,System.String,System.Func{System.String,``0},System.Runtime.Caching.CacheItemPolicy,System.String)">
+            <summary>A MemoryCache extension method that adds an or get existing.</summary>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="cache">The cache to act on.</param>
+            <param name="key">The key.</param>
+            <param name="valueFactory">The value factory.</param>
+            <param name="policy">The policy.</param>
+            <param name="regionName">(Optional) name of the region.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.AddOrGetExisting``1(System.Runtime.Caching.MemoryCache,System.String,System.Func{System.String,``0},System.DateTimeOffset,System.String)">
+            <summary>A MemoryCache extension method that adds an or get existing.</summary>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="cache">The cache to act on.</param>
+            <param name="key">The key.</param>
+            <param name="valueFactory">The value factory.</param>
+            <param name="absoluteExpiration">The policy.</param>
+            <param name="regionName">(Optional) name of the region.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.FromCache``2(``0,System.Runtime.Caching.MemoryCache,System.String,``1)">
+            <summary>A TKey extension method that from cache.</summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cache">The cache.</param>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.FromCache``2(``0,System.String,``1)">
+            <summary>A TKey extension method that from cache.</summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.FromCache``2(``0,System.Runtime.Caching.MemoryCache,System.String,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>A TKey extension method that from cache.</summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cache">The cache.</param>
+            <param name="key">The key.</param>
+            <param name="valueFactory">The value factory.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.FromCache``2(``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>A TKey extension method that from cache.</summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="key">The key.</param>
+            <param name="valueFactory">The value factory.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.FromCache``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>A TKey extension method that from cache.</summary>
+            <typeparam name="TKey">Type of the key.</typeparam>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="valueFactory">The value factory.</param>
+            <returns>A TValue.</returns>
+        </member>
+        <member name="M:Extensions.FromCache``2(``0,System.Runtime.Caching.MemoryCache,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>A TKey extension method that from cache.</summary>
+            <typeparam name="TKey">Type of the key.</typeparam>
+            <typeparam name="TValue">Type of the value.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="cache">The cache.</param>
+            <param name="valueFactory">The value factory.</param>
+            <returns>A TValue.</returns>
+        </member>
+    </members>
+</doc>

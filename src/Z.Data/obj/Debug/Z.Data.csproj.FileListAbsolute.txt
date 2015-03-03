@@ -1,0 +1,9 @@
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\bin\Debug\Z.Data.XML
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\bin\Debug\Z.Data.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\bin\Debug\Z.Data.pdb
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\bin\Debug\Z.Core.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\bin\Debug\Z.Core.pdb
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\bin\Debug\Z.Core.xml
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\obj\Debug\Z.Data.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\obj\Debug\Z.Data.dll
+C:\Users\Jonathan\Desktop\Z\CodePlex\zExtensionMethods\old-source\src\Z.Data\obj\Debug\Z.Data.pdb
