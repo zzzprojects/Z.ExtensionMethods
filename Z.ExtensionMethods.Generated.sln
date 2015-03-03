@@ -1,0 +1,440 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Caching", "src\Z.Caching\Z.Caching.csproj", "{B6AA9C0D-EB5E-41E2-8140-B253CCAA2D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Collections", "src\Z.Collections\Z.Collections.csproj", "{CBA3FE59-AFB8-4EAA-9FF1-54A36BD65C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Compression", "src\Z.Compression\Z.Compression.csproj", "{F10AFF2F-6664-4C67-A94B-C3697775EE75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Core", "src\Z.Core\Z.Core.csproj", "{02F009F8-720B-4CBD-98FF-F2C33F4441D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Data", "src\Z.Data\Z.Data.csproj", "{6EDEBB64-2D4B-43CC-A94E-919B44E254A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Data.SQLite", "src\Z.Data.SQLite\Z.Data.SQLite.csproj", "{40CEC7DB-C8E6-4A24-8DE7-9E0EDF8708C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Data.SqlServerCe", "src\Z.Data.SqlServerCe\Z.Data.SqlServerCe.csproj", "{33C74C96-2394-4442-82AD-DEB6C8DF233F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Drawing", "src\Z.Drawing\Z.Drawing.csproj", "{CEA5A98F-D0DF-4D45-B6CD-6770DE8F0649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.IO", "src\Z.IO\Z.IO.csproj", "{981D1A7A-DC30-4F93-8247-F2AD6D09E4EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Net", "src\Z.Net\Z.Net.csproj", "{F2A96FE7-E60C-4927-A37F-35F5D896152D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Reflection", "src\Z.Reflection\Z.Reflection.csproj", "{C3EDA334-3D94-4960-93B9-3026ADC4CC12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Serialization", "src\Z.Serialization\Z.Serialization.csproj", "{8ED7C28F-C3C2-4C1C-A9C3-FB64A2EDD6A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Web", "src\Z.Web\Z.Web.csproj", "{4F7B7D3C-48BA-475D-BDBE-475E9CED115A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Window.Forms", "src\Z.Window.Forms\Z.Window.Forms.csproj", "{532B4EAF-E888-41FF-8078-6ADCF4E5EE23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Xml.Linq", "src\Z.Xml.Linq\Z.Xml.Linq.csproj", "{5650A849-0802-452F-AC31-2D530D86BDB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Caching.Test", "test\Z.Caching.Test\Z.Caching.Test.csproj", "{33BD78F7-E14C-40B5-82E1-5BEFA2792FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Collections.Test", "test\Z.Collections.Test\Z.Collections.Test.csproj", "{DE8D6808-36E7-4843-86B1-C608B46AD16A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Compression.Test", "test\Z.Compression.Test\Z.Compression.Test.csproj", "{C9B3B89D-A6FA-4547-B601-E84E9F19B4CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Core.Test", "test\Z.Core.Test\Z.Core.Test.csproj", "{F6EFDF72-69CE-4A34-8F0C-E07A1E711924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Data.Test", "test\Z.Data.Test\Z.Data.Test.csproj", "{CCCE26B1-B0BD-4587-9B56-8121D6C592F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Drawing.Test", "test\Z.Drawing.Test\Z.Drawing.Test.csproj", "{7E673AF7-75B0-47FC-8BAE-A4D63729A5ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.IO.Test", "test\Z.IO.Test\Z.IO.Test.csproj", "{CA5AB77E-984F-4189-B6E1-C4FAFD93BDFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Net.Test", "test\Z.Net.Test\Z.Net.Test.csproj", "{F8CD353C-F0C1-4230-841E-4DD90DF7D964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Reflection.Test", "test\Z.Reflection.Test\Z.Reflection.Test.csproj", "{52CC2C91-8B49-43EB-BC47-D70F68689B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Serialization.Test", "test\Z.Serialization.Test\Z.Serialization.Test.csproj", "{B9AE2911-F7CE-411F-A1CB-B2498271C647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Web.Test", "test\Z.Web.Test\Z.Web.Test.csproj", "{8B972330-39A6-4B57-900A-613DEAD7AEA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Xml.Linq.Test", "test\Z.Xml.Linq.Test\Z.Xml.Linq.Test.csproj", "{9B61D149-575C-411A-A063-3D122B88CC63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tool", "tool", "{4092578E-F121-4AC4-83D0-BF802CBAE5EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.Tool.GenerateFramework", "tool\Z.ExtensionMethods.Tool.GenerateFramework\Z.ExtensionMethods.Tool.GenerateFramework.csproj", "{DFC5ABB7-9F4C-4814-8703-46F3DA784990}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "generated", "generated", "{234D0FBA-C701-4C89-A52D-1F41BCD58DC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.NET40", "generated\Z.ExtensionMethods.NET40\Z.ExtensionMethods.NET40.csproj", "{E5C4CD74-774C-4EEE-B19B-85C9F54162C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.NET45", "generated\Z.ExtensionMethods.NET45\Z.ExtensionMethods.NET45.csproj", "{9C4C083B-BE9C-4D4B-A977-42FED2C94516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithOneNamespace.NET40", "generated\Z.ExtensionMethods.WithOneNamespace.NET40\Z.ExtensionMethods.WithOneNamespace.NET40.csproj", "{4BB6A44B-4A55-43EF-BC40-B80091EDE248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithOneNamespace.NET45", "generated\Z.ExtensionMethods.WithOneNamespace.NET45\Z.ExtensionMethods.WithOneNamespace.NET45.csproj", "{DEFBE223-A46B-46AB-BC24-65853493D2B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithTwoNamespace.NET40", "generated\Z.ExtensionMethods.WithTwoNamespace.NET40\Z.ExtensionMethods.WithTwoNamespace.NET40.csproj", "{C4805B15-4A57-4B98-AD3B-E161E944992E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithObjectNamespace.NET40", "generated\Z.ExtensionMethods.WithObjectNamespace.NET40\Z.ExtensionMethods.WithObjectNamespace.NET40.csproj", "{BE8C08A6-A3DC-4CAE-B8AE-445C6A4932A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithTwoNamespace.NET45", "generated\Z.ExtensionMethods.WithTwoNamespace.NET45\Z.ExtensionMethods.WithTwoNamespace.NET45.csproj", "{A939B94F-C714-4CCE-A399-CE13B14DCA84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithObjectNamespace.NET45", "generated\Z.ExtensionMethods.WithObjectNamespace.NET45\Z.ExtensionMethods.WithObjectNamespace.NET45.csproj", "{E442A1D7-F1DD-4E5C-85CA-094C3B55F68F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithNamespace.NET40", "generated\Z.ExtensionMethods.WithNamespace.NET40\Z.ExtensionMethods.WithNamespace.NET40.csproj", "{8EA1BFBC-D124-4863-AD05-C0DE186BDE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithNamespace.NET45", "generated\Z.ExtensionMethods.WithNamespace.NET45\Z.ExtensionMethods.WithNamespace.NET45.csproj", "{DD103536-5CF5-43D4-A597-9E57FBA389C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Data.MySql", "src\Z.Data.MySql\Z.Data.MySql.csproj", "{0DE7197D-D4E1-49E4-B9DA-29FF24747A63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab", "lab", "{17901011-6488-4283-83F2-D40E8D891A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.Lab", "lab\Z.ExtensionMethods.Lab\Z.ExtensionMethods.Lab.csproj", "{7C99DCC9-7623-402E-9C6A-80892C30CCA6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 41
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\Z.Caching\\Z.Caching.csproj
+		SccProjectName1 = src/Z.Caching
+		SccLocalPath1 = src\\Z.Caching
+		SccProjectUniqueName2 = src\\Z.Collections\\Z.Collections.csproj
+		SccProjectName2 = src/Z.Collections
+		SccLocalPath2 = src\\Z.Collections
+		SccProjectUniqueName3 = src\\Z.Compression\\Z.Compression.csproj
+		SccProjectName3 = src/Z.Compression
+		SccLocalPath3 = src\\Z.Compression
+		SccProjectUniqueName4 = src\\Z.Core\\Z.Core.csproj
+		SccProjectName4 = src/Z.Core
+		SccLocalPath4 = src\\Z.Core
+		SccProjectUniqueName5 = src\\Z.Data\\Z.Data.csproj
+		SccProjectName5 = src/Z.Data
+		SccLocalPath5 = src\\Z.Data
+		SccProjectUniqueName6 = src\\Z.Data.SQLite\\Z.Data.SQLite.csproj
+		SccProjectName6 = src/Z.Data.SQLite
+		SccLocalPath6 = src\\Z.Data.SQLite
+		SccProjectUniqueName7 = src\\Z.Data.SqlServerCe\\Z.Data.SqlServerCe.csproj
+		SccProjectName7 = src/Z.Data.SqlServerCe
+		SccLocalPath7 = src\\Z.Data.SqlServerCe
+		SccProjectUniqueName8 = src\\Z.Drawing\\Z.Drawing.csproj
+		SccProjectName8 = src/Z.Drawing
+		SccLocalPath8 = src\\Z.Drawing
+		SccProjectUniqueName9 = src\\Z.IO\\Z.IO.csproj
+		SccProjectName9 = src/Z.IO
+		SccLocalPath9 = src\\Z.IO
+		SccProjectUniqueName10 = src\\Z.Net\\Z.Net.csproj
+		SccProjectName10 = src/Z.Net
+		SccLocalPath10 = src\\Z.Net
+		SccProjectUniqueName11 = src\\Z.Reflection\\Z.Reflection.csproj
+		SccProjectName11 = src/Z.Reflection
+		SccLocalPath11 = src\\Z.Reflection
+		SccProjectUniqueName12 = src\\Z.Serialization\\Z.Serialization.csproj
+		SccProjectName12 = src/Z.Serialization
+		SccLocalPath12 = src\\Z.Serialization
+		SccProjectUniqueName13 = src\\Z.Web\\Z.Web.csproj
+		SccProjectName13 = src/Z.Web
+		SccLocalPath13 = src\\Z.Web
+		SccProjectUniqueName14 = src\\Z.Window.Forms\\Z.Window.Forms.csproj
+		SccProjectName14 = src/Z.Window.Forms
+		SccLocalPath14 = src\\Z.Window.Forms
+		SccProjectUniqueName15 = src\\Z.Xml.Linq\\Z.Xml.Linq.csproj
+		SccProjectName15 = src/Z.Xml.Linq
+		SccLocalPath15 = src\\Z.Xml.Linq
+		SccProjectUniqueName16 = test\\Z.Caching.Test\\Z.Caching.Test.csproj
+		SccProjectTopLevelParentUniqueName16 = Z.ExtensionMethods.sln
+		SccProjectName16 = test/Z.Caching.Test
+		SccLocalPath16 = test\\Z.Caching.Test
+		SccProjectUniqueName17 = test\\Z.Collections.Test\\Z.Collections.Test.csproj
+		SccProjectTopLevelParentUniqueName17 = Z.ExtensionMethods.sln
+		SccProjectName17 = test/Z.Collections.Test
+		SccLocalPath17 = test\\Z.Collections.Test
+		SccProjectUniqueName18 = test\\Z.Compression.Test\\Z.Compression.Test.csproj
+		SccProjectTopLevelParentUniqueName18 = Z.ExtensionMethods.sln
+		SccProjectName18 = test/Z.Compression.Test
+		SccLocalPath18 = test\\Z.Compression.Test
+		SccProjectUniqueName19 = test\\Z.Core.Test\\Z.Core.Test.csproj
+		SccProjectTopLevelParentUniqueName19 = Z.ExtensionMethods.sln
+		SccProjectName19 = test/Z.Core.Test
+		SccLocalPath19 = test\\Z.Core.Test
+		SccProjectUniqueName20 = test\\Z.Data.Test\\Z.Data.Test.csproj
+		SccProjectTopLevelParentUniqueName20 = Z.ExtensionMethods.sln
+		SccProjectName20 = test/Z.Data.Test
+		SccLocalPath20 = test\\Z.Data.Test
+		SccProjectUniqueName21 = test\\Z.Drawing.Test\\Z.Drawing.Test.csproj
+		SccProjectTopLevelParentUniqueName21 = Z.ExtensionMethods.sln
+		SccProjectName21 = test/Z.Drawing.Test
+		SccLocalPath21 = test\\Z.Drawing.Test
+		SccProjectUniqueName22 = test\\Z.IO.Test\\Z.IO.Test.csproj
+		SccProjectTopLevelParentUniqueName22 = Z.ExtensionMethods.sln
+		SccProjectName22 = test/Z.IO.Test
+		SccLocalPath22 = test\\Z.IO.Test
+		SccProjectUniqueName23 = test\\Z.Net.Test\\Z.Net.Test.csproj
+		SccProjectTopLevelParentUniqueName23 = Z.ExtensionMethods.sln
+		SccProjectName23 = test/Z.Net.Test
+		SccLocalPath23 = test\\Z.Net.Test
+		SccProjectUniqueName24 = test\\Z.Reflection.Test\\Z.Reflection.Test.csproj
+		SccProjectTopLevelParentUniqueName24 = Z.ExtensionMethods.sln
+		SccProjectName24 = test/Z.Reflection.Test
+		SccLocalPath24 = test\\Z.Reflection.Test
+		SccProjectUniqueName25 = test\\Z.Serialization.Test\\Z.Serialization.Test.csproj
+		SccProjectTopLevelParentUniqueName25 = Z.ExtensionMethods.sln
+		SccProjectName25 = test/Z.Serialization.Test
+		SccLocalPath25 = test\\Z.Serialization.Test
+		SccProjectUniqueName26 = test\\Z.Web.Test\\Z.Web.Test.csproj
+		SccProjectTopLevelParentUniqueName26 = Z.ExtensionMethods.sln
+		SccProjectName26 = test/Z.Web.Test
+		SccLocalPath26 = test\\Z.Web.Test
+		SccProjectUniqueName27 = test\\Z.Xml.Linq.Test\\Z.Xml.Linq.Test.csproj
+		SccProjectTopLevelParentUniqueName27 = Z.ExtensionMethods.sln
+		SccProjectName27 = test/Z.Xml.Linq.Test
+		SccLocalPath27 = test\\Z.Xml.Linq.Test
+		SccProjectUniqueName28 = tool\\Z.ExtensionMethods.Tool.GenerateFramework\\Z.ExtensionMethods.Tool.GenerateFramework.csproj
+		SccProjectTopLevelParentUniqueName28 = Z.ExtensionMethods.sln
+		SccProjectName28 = tool/Z.ExtensionMethods.Tool.GenerateFramework
+		SccLocalPath28 = tool\\Z.ExtensionMethods.Tool.GenerateFramework
+		SccProjectUniqueName29 = generated\\Z.ExtensionMethods.NET40\\Z.ExtensionMethods.NET40.csproj
+		SccProjectTopLevelParentUniqueName29 = Z.ExtensionMethods.sln
+		SccProjectName29 = generated/Z.ExtensionMethods.NET40
+		SccLocalPath29 = generated\\Z.ExtensionMethods.NET40
+		SccProjectUniqueName30 = generated\\Z.ExtensionMethods.NET45\\Z.ExtensionMethods.NET45.csproj
+		SccProjectTopLevelParentUniqueName30 = Z.ExtensionMethods.sln
+		SccProjectName30 = generated/Z.ExtensionMethods.NET45
+		SccLocalPath30 = generated\\Z.ExtensionMethods.NET45
+		SccProjectUniqueName31 = generated\\Z.ExtensionMethods.WithOneNamespace.NET40\\Z.ExtensionMethods.WithOneNamespace.NET40.csproj
+		SccProjectTopLevelParentUniqueName31 = Z.ExtensionMethods.sln
+		SccProjectName31 = generated/Z.ExtensionMethods.WithOneNamespace.NET40
+		SccLocalPath31 = generated\\Z.ExtensionMethods.WithOneNamespace.NET40
+		SccProjectUniqueName32 = generated\\Z.ExtensionMethods.WithOneNamespace.NET45\\Z.ExtensionMethods.WithOneNamespace.NET45.csproj
+		SccProjectTopLevelParentUniqueName32 = Z.ExtensionMethods.sln
+		SccProjectName32 = generated/Z.ExtensionMethods.WithOneNamespace.NET45
+		SccLocalPath32 = generated\\Z.ExtensionMethods.WithOneNamespace.NET45
+		SccProjectUniqueName33 = generated\\Z.ExtensionMethods.WithTwoNamespace.NET40\\Z.ExtensionMethods.WithTwoNamespace.NET40.csproj
+		SccProjectTopLevelParentUniqueName33 = Z.ExtensionMethods.sln
+		SccProjectName33 = generated/Z.ExtensionMethods.WithTwoNamespace.NET40
+		SccLocalPath33 = generated\\Z.ExtensionMethods.WithTwoNamespace.NET40
+		SccProjectUniqueName34 = generated\\Z.ExtensionMethods.WithObjectNamespace.NET40\\Z.ExtensionMethods.WithObjectNamespace.NET40.csproj
+		SccProjectTopLevelParentUniqueName34 = Z.ExtensionMethods.sln
+		SccProjectName34 = generated/Z.ExtensionMethods.WithObjectNamespace.NET40
+		SccLocalPath34 = generated\\Z.ExtensionMethods.WithObjectNamespace.NET40
+		SccProjectUniqueName35 = generated\\Z.ExtensionMethods.WithTwoNamespace.NET45\\Z.ExtensionMethods.WithTwoNamespace.NET45.csproj
+		SccProjectTopLevelParentUniqueName35 = Z.ExtensionMethods.sln
+		SccProjectName35 = generated/Z.ExtensionMethods.WithTwoNamespace.NET45
+		SccLocalPath35 = generated\\Z.ExtensionMethods.WithTwoNamespace.NET45
+		SccProjectUniqueName36 = generated\\Z.ExtensionMethods.WithObjectNamespace.NET45\\Z.ExtensionMethods.WithObjectNamespace.NET45.csproj
+		SccProjectTopLevelParentUniqueName36 = Z.ExtensionMethods.sln
+		SccProjectName36 = generated/Z.ExtensionMethods.WithObjectNamespace.NET45
+		SccLocalPath36 = generated\\Z.ExtensionMethods.WithObjectNamespace.NET45
+		SccProjectUniqueName37 = generated\\Z.ExtensionMethods.WithNamespace.NET40\\Z.ExtensionMethods.WithNamespace.NET40.csproj
+		SccProjectTopLevelParentUniqueName37 = Z.ExtensionMethods.sln
+		SccProjectName37 = generated/Z.ExtensionMethods.WithNamespace.NET40
+		SccLocalPath37 = generated\\Z.ExtensionMethods.WithNamespace.NET40
+		SccProjectUniqueName38 = generated\\Z.ExtensionMethods.WithNamespace.NET45\\Z.ExtensionMethods.WithNamespace.NET45.csproj
+		SccProjectTopLevelParentUniqueName38 = Z.ExtensionMethods.sln
+		SccProjectName38 = generated/Z.ExtensionMethods.WithNamespace.NET45
+		SccLocalPath38 = generated\\Z.ExtensionMethods.WithNamespace.NET45
+		SccProjectUniqueName39 = src\\Z.Data.MySql\\Z.Data.MySql.csproj
+		SccProjectName39 = src/Z.Data.MySql
+		SccLocalPath39 = src\\Z.Data.MySql
+		SccProjectUniqueName40 = lab\\Z.ExtensionMethods.Lab\\Z.ExtensionMethods.Lab.csproj
+		SccProjectTopLevelParentUniqueName40 = Z.ExtensionMethods.sln
+		SccProjectName40 = lab/Z.ExtensionMethods.Lab
+		SccLocalPath40 = lab\\Z.ExtensionMethods.Lab
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6AA9C0D-EB5E-41E2-8140-B253CCAA2D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AA9C0D-EB5E-41E2-8140-B253CCAA2D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AA9C0D-EB5E-41E2-8140-B253CCAA2D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AA9C0D-EB5E-41E2-8140-B253CCAA2D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA3FE59-AFB8-4EAA-9FF1-54A36BD65C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA3FE59-AFB8-4EAA-9FF1-54A36BD65C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA3FE59-AFB8-4EAA-9FF1-54A36BD65C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA3FE59-AFB8-4EAA-9FF1-54A36BD65C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10AFF2F-6664-4C67-A94B-C3697775EE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10AFF2F-6664-4C67-A94B-C3697775EE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10AFF2F-6664-4C67-A94B-C3697775EE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10AFF2F-6664-4C67-A94B-C3697775EE75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F009F8-720B-4CBD-98FF-F2C33F4441D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F009F8-720B-4CBD-98FF-F2C33F4441D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F009F8-720B-4CBD-98FF-F2C33F4441D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F009F8-720B-4CBD-98FF-F2C33F4441D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDEBB64-2D4B-43CC-A94E-919B44E254A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDEBB64-2D4B-43CC-A94E-919B44E254A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDEBB64-2D4B-43CC-A94E-919B44E254A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDEBB64-2D4B-43CC-A94E-919B44E254A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40CEC7DB-C8E6-4A24-8DE7-9E0EDF8708C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40CEC7DB-C8E6-4A24-8DE7-9E0EDF8708C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40CEC7DB-C8E6-4A24-8DE7-9E0EDF8708C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40CEC7DB-C8E6-4A24-8DE7-9E0EDF8708C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C74C96-2394-4442-82AD-DEB6C8DF233F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C74C96-2394-4442-82AD-DEB6C8DF233F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C74C96-2394-4442-82AD-DEB6C8DF233F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C74C96-2394-4442-82AD-DEB6C8DF233F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA5A98F-D0DF-4D45-B6CD-6770DE8F0649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA5A98F-D0DF-4D45-B6CD-6770DE8F0649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA5A98F-D0DF-4D45-B6CD-6770DE8F0649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA5A98F-D0DF-4D45-B6CD-6770DE8F0649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981D1A7A-DC30-4F93-8247-F2AD6D09E4EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981D1A7A-DC30-4F93-8247-F2AD6D09E4EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981D1A7A-DC30-4F93-8247-F2AD6D09E4EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981D1A7A-DC30-4F93-8247-F2AD6D09E4EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A96FE7-E60C-4927-A37F-35F5D896152D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A96FE7-E60C-4927-A37F-35F5D896152D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A96FE7-E60C-4927-A37F-35F5D896152D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A96FE7-E60C-4927-A37F-35F5D896152D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EDA334-3D94-4960-93B9-3026ADC4CC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EDA334-3D94-4960-93B9-3026ADC4CC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EDA334-3D94-4960-93B9-3026ADC4CC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EDA334-3D94-4960-93B9-3026ADC4CC12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED7C28F-C3C2-4C1C-A9C3-FB64A2EDD6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED7C28F-C3C2-4C1C-A9C3-FB64A2EDD6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED7C28F-C3C2-4C1C-A9C3-FB64A2EDD6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED7C28F-C3C2-4C1C-A9C3-FB64A2EDD6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7B7D3C-48BA-475D-BDBE-475E9CED115A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7B7D3C-48BA-475D-BDBE-475E9CED115A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7B7D3C-48BA-475D-BDBE-475E9CED115A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7B7D3C-48BA-475D-BDBE-475E9CED115A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532B4EAF-E888-41FF-8078-6ADCF4E5EE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532B4EAF-E888-41FF-8078-6ADCF4E5EE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532B4EAF-E888-41FF-8078-6ADCF4E5EE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532B4EAF-E888-41FF-8078-6ADCF4E5EE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5650A849-0802-452F-AC31-2D530D86BDB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5650A849-0802-452F-AC31-2D530D86BDB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5650A849-0802-452F-AC31-2D530D86BDB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5650A849-0802-452F-AC31-2D530D86BDB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BD78F7-E14C-40B5-82E1-5BEFA2792FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BD78F7-E14C-40B5-82E1-5BEFA2792FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BD78F7-E14C-40B5-82E1-5BEFA2792FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BD78F7-E14C-40B5-82E1-5BEFA2792FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8D6808-36E7-4843-86B1-C608B46AD16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8D6808-36E7-4843-86B1-C608B46AD16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8D6808-36E7-4843-86B1-C608B46AD16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8D6808-36E7-4843-86B1-C608B46AD16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B3B89D-A6FA-4547-B601-E84E9F19B4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B3B89D-A6FA-4547-B601-E84E9F19B4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B3B89D-A6FA-4547-B601-E84E9F19B4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B3B89D-A6FA-4547-B601-E84E9F19B4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6EFDF72-69CE-4A34-8F0C-E07A1E711924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EFDF72-69CE-4A34-8F0C-E07A1E711924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EFDF72-69CE-4A34-8F0C-E07A1E711924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EFDF72-69CE-4A34-8F0C-E07A1E711924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCCE26B1-B0BD-4587-9B56-8121D6C592F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCCE26B1-B0BD-4587-9B56-8121D6C592F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCCE26B1-B0BD-4587-9B56-8121D6C592F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCCE26B1-B0BD-4587-9B56-8121D6C592F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E673AF7-75B0-47FC-8BAE-A4D63729A5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E673AF7-75B0-47FC-8BAE-A4D63729A5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E673AF7-75B0-47FC-8BAE-A4D63729A5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E673AF7-75B0-47FC-8BAE-A4D63729A5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5AB77E-984F-4189-B6E1-C4FAFD93BDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5AB77E-984F-4189-B6E1-C4FAFD93BDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5AB77E-984F-4189-B6E1-C4FAFD93BDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5AB77E-984F-4189-B6E1-C4FAFD93BDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8CD353C-F0C1-4230-841E-4DD90DF7D964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CD353C-F0C1-4230-841E-4DD90DF7D964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CD353C-F0C1-4230-841E-4DD90DF7D964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CD353C-F0C1-4230-841E-4DD90DF7D964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CC2C91-8B49-43EB-BC47-D70F68689B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CC2C91-8B49-43EB-BC47-D70F68689B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CC2C91-8B49-43EB-BC47-D70F68689B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CC2C91-8B49-43EB-BC47-D70F68689B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AE2911-F7CE-411F-A1CB-B2498271C647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AE2911-F7CE-411F-A1CB-B2498271C647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AE2911-F7CE-411F-A1CB-B2498271C647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AE2911-F7CE-411F-A1CB-B2498271C647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B972330-39A6-4B57-900A-613DEAD7AEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B972330-39A6-4B57-900A-613DEAD7AEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B972330-39A6-4B57-900A-613DEAD7AEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B972330-39A6-4B57-900A-613DEAD7AEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B61D149-575C-411A-A063-3D122B88CC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B61D149-575C-411A-A063-3D122B88CC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B61D149-575C-411A-A063-3D122B88CC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B61D149-575C-411A-A063-3D122B88CC63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC5ABB7-9F4C-4814-8703-46F3DA784990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC5ABB7-9F4C-4814-8703-46F3DA784990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC5ABB7-9F4C-4814-8703-46F3DA784990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC5ABB7-9F4C-4814-8703-46F3DA784990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C4CD74-774C-4EEE-B19B-85C9F54162C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C4CD74-774C-4EEE-B19B-85C9F54162C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C4CD74-774C-4EEE-B19B-85C9F54162C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C4CD74-774C-4EEE-B19B-85C9F54162C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4C083B-BE9C-4D4B-A977-42FED2C94516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4C083B-BE9C-4D4B-A977-42FED2C94516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4C083B-BE9C-4D4B-A977-42FED2C94516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4C083B-BE9C-4D4B-A977-42FED2C94516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BB6A44B-4A55-43EF-BC40-B80091EDE248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB6A44B-4A55-43EF-BC40-B80091EDE248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB6A44B-4A55-43EF-BC40-B80091EDE248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB6A44B-4A55-43EF-BC40-B80091EDE248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFBE223-A46B-46AB-BC24-65853493D2B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFBE223-A46B-46AB-BC24-65853493D2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFBE223-A46B-46AB-BC24-65853493D2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFBE223-A46B-46AB-BC24-65853493D2B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4805B15-4A57-4B98-AD3B-E161E944992E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4805B15-4A57-4B98-AD3B-E161E944992E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4805B15-4A57-4B98-AD3B-E161E944992E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4805B15-4A57-4B98-AD3B-E161E944992E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE8C08A6-A3DC-4CAE-B8AE-445C6A4932A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE8C08A6-A3DC-4CAE-B8AE-445C6A4932A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE8C08A6-A3DC-4CAE-B8AE-445C6A4932A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8C08A6-A3DC-4CAE-B8AE-445C6A4932A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A939B94F-C714-4CCE-A399-CE13B14DCA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A939B94F-C714-4CCE-A399-CE13B14DCA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A939B94F-C714-4CCE-A399-CE13B14DCA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A939B94F-C714-4CCE-A399-CE13B14DCA84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E442A1D7-F1DD-4E5C-85CA-094C3B55F68F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E442A1D7-F1DD-4E5C-85CA-094C3B55F68F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E442A1D7-F1DD-4E5C-85CA-094C3B55F68F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E442A1D7-F1DD-4E5C-85CA-094C3B55F68F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA1BFBC-D124-4863-AD05-C0DE186BDE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA1BFBC-D124-4863-AD05-C0DE186BDE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA1BFBC-D124-4863-AD05-C0DE186BDE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA1BFBC-D124-4863-AD05-C0DE186BDE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD103536-5CF5-43D4-A597-9E57FBA389C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD103536-5CF5-43D4-A597-9E57FBA389C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD103536-5CF5-43D4-A597-9E57FBA389C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD103536-5CF5-43D4-A597-9E57FBA389C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE7197D-D4E1-49E4-B9DA-29FF24747A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE7197D-D4E1-49E4-B9DA-29FF24747A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE7197D-D4E1-49E4-B9DA-29FF24747A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE7197D-D4E1-49E4-B9DA-29FF24747A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C99DCC9-7623-402E-9C6A-80892C30CCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C99DCC9-7623-402E-9C6A-80892C30CCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C99DCC9-7623-402E-9C6A-80892C30CCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C99DCC9-7623-402E-9C6A-80892C30CCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE 
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33BD78F7-E14C-40B5-82E1-5BEFA2792FA0} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{DE8D6808-36E7-4843-86B1-C608B46AD16A} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{C9B3B89D-A6FA-4547-B601-E84E9F19B4CF} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{F6EFDF72-69CE-4A34-8F0C-E07A1E711924} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{CCCE26B1-B0BD-4587-9B56-8121D6C592F0} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{7E673AF7-75B0-47FC-8BAE-A4D63729A5ED} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{CA5AB77E-984F-4189-B6E1-C4FAFD93BDFB} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{F8CD353C-F0C1-4230-841E-4DD90DF7D964} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{52CC2C91-8B49-43EB-BC47-D70F68689B0B} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{B9AE2911-F7CE-411F-A1CB-B2498271C647} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{8B972330-39A6-4B57-900A-613DEAD7AEA7} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{9B61D149-575C-411A-A063-3D122B88CC63} = {9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}
+		{DFC5ABB7-9F4C-4814-8703-46F3DA784990} = {4092578E-F121-4AC4-83D0-BF802CBAE5EE}
+		{E5C4CD74-774C-4EEE-B19B-85C9F54162C9} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{9C4C083B-BE9C-4D4B-A977-42FED2C94516} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{4BB6A44B-4A55-43EF-BC40-B80091EDE248} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{DEFBE223-A46B-46AB-BC24-65853493D2B0} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{C4805B15-4A57-4B98-AD3B-E161E944992E} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{BE8C08A6-A3DC-4CAE-B8AE-445C6A4932A4} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{A939B94F-C714-4CCE-A399-CE13B14DCA84} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{E442A1D7-F1DD-4E5C-85CA-094C3B55F68F} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{8EA1BFBC-D124-4863-AD05-C0DE186BDE17} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{DD103536-5CF5-43D4-A597-9E57FBA389C1} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{7C99DCC9-7623-402E-9C6A-80892C30CCA6} = {17901011-6488-4283-83F2-D40E8D891A91}
+	EndGlobalSection
+EndGlobal

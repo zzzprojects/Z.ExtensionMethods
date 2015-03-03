@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DE7197D-D4E1-49E4-B9DA-29FF24747A63}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Z.Data.MySql</RootNamespace>
+    <AssemblyName>Z.Data.MySql</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Z.Data.MySql.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RELEASE NET40|AnyCPU'">
+    <OutputPath>bin\RELEASE NET40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RELEASE NET45|AnyCPU'">
+    <OutputPath>bin\RELEASE NET45\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.5\lib\net40\MySql.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MySql.Data.MySqlClient.MySqlCommand\MySqlCommand.ExecuteDataSet.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlCommand\MySqlCommand.ExecuteDataTable.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteDataSet.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteDataTable.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteEntities.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteEntity.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteExpandoObject.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteExpandoObjects.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteNonQuery.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteReader.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteScalar.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteScalarAs.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteScalarTo.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlParameterCollection\MySqlParameterCollection.AddRangeWithValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Z.Core\Z.Core.csproj">
+      <Project>{02f009f8-720b-4cbd-98ff-f2c33f4441d5}</Project>
+      <Name>Z.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Z.Data\Z.Data.csproj">
+      <Project>{6edebb64-2d4b-43cc-a94e-919b44e254a2}</Project>
+      <Name>Z.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
