@@ -1,5 +1,6 @@
 [Bb]in/
 [Oo]bj/
+[Pp]ackages/
 *.suo
 *.user
 *.userprefs
