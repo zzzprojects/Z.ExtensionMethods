@@ -1,4 +1,4 @@
-#![Logo](src/logo.png) ZZZ Projects#
+#![Logo](src/logo.png)#
 
 - [Homepage](http://www.zzzprojects.com)
 - [Product Page](http://www.zzzprojects.com/extension-methods/)
