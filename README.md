@@ -1,13 +1,11 @@
-#![Logo](Doc/icons/logo.jpg) ZZZ Projects#
+#![Logo](src/logo.png) ZZZ Projects#
 
 - [Homepage](http://www.zzzprojects.com)
-- [Project Page](http://www.zzzprojects.com/extension-methods/)
-- [Documentation](http://www.zzzprojects.com/guides/extension-methods/index.html)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [License](LICENSE.md)
-
-! CodePlex Release
-- Incomming
-
-! NuGet Package
-- Incomming
+- [Product Page](http://www.zzzprojects.com/extension-methods/)
+- [UserVoice](http://zzzprojects.uservoice.com/forums/283927)
+- [Downloads](http://www.zzzprojects.com/products/)
+- [Guides](http://www.zzzprojects.com/guides/extension-methods/index.html)
+- Other Products
+-- [Entity Framework Extensions](http://www.zzzprojects.com/entity-framework-extensions/)
+-- [Bulk Operations](http://www.zzzprojects.com/bulk-operations/)
+-- [Icon Library](http://www.zzzprojects.com/icon-library/)
