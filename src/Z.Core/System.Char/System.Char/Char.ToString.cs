@@ -1,14 +1,20 @@
+// Copyright (c) 2015 ZZZ Projects. All rights reserved
+// Licensed under MIT License (MIT) (https://github.com/zzzprojects/Z.ExtensionMethods)
+// Website: http://www.zzzprojects.com/
+// Feedback / Feature Requests / Issues : http://zzzprojects.uservoice.com/forums/283927
+// All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
+
 using System;
 
 public static partial class Extensions
+{
+    /// <summary>
+    ///     Converts the specified Unicode character to its equivalent string representation.
+    /// </summary>
+    /// <param name="c">The Unicode character to convert.</param>
+    /// <returns>The string representation of the value of .</returns>
+    public static String ToString(this Char c)
     {
-        /// <summary>
-        ///     Converts the specified Unicode character to its equivalent string representation.
-        /// </summary>
-        /// <param name="c">The Unicode character to convert.</param>
-        /// <returns>The string representation of the value of .</returns>
-        public static String ToString(this Char c)
-        {
-            return Char.ToString(c);
-        }
+        return Char.ToString(c);
     }
+}
