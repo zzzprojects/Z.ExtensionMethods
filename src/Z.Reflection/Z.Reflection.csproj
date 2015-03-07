@@ -93,12 +93,12 @@
     <Compile Include="System.Reflection.ParameterInfo\System.Attribute\ParameterInfo.GetCustomAttribute.cs" />
     <Compile Include="System.Reflection.ParameterInfo\System.Attribute\ParameterInfo.GetCustomAttributes.cs" />
     <Compile Include="System.Reflection.ParameterInfo\System.Attribute\ParameterInfo.IsDefined.cs" />
-    <Compile Include="TypeComparison\Object.IsArray.cs" />
-    <Compile Include="TypeComparison\Object.IsClass.cs" />
-    <Compile Include="TypeComparison\Object.IsEnum.cs" />
-    <Compile Include="TypeComparison\Object.IsSubclassOf.cs" />
-    <Compile Include="TypeComparison\Object.IsTypeOf.cs" />
-    <Compile Include="TypeComparison\Object.IsTypeOrInheritsOf.cs" />
+    <Compile Include="System.Object\TypeComparison\Object.IsArray.cs" />
+    <Compile Include="System.Object\TypeComparison\Object.IsClass.cs" />
+    <Compile Include="System.Object\TypeComparison\Object.IsEnum.cs" />
+    <Compile Include="System.Object\TypeComparison\Object.IsSubclassOf.cs" />
+    <Compile Include="System.Object\TypeComparison\Object.IsTypeOf.cs" />
+    <Compile Include="System.Object\TypeComparison\Object.IsTypeOrInheritsOf.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
