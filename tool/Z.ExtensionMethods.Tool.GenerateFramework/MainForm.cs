@@ -19,10 +19,11 @@ namespace Z.ExtensionMethods.Tool.GenerateFramework
         public const string Template_NoNamespace_WithObjectNamespace = @"using Z.ExtensionMethods.ObjectExtensions;
 
 @(Model.Content)";
-        public const string Template_WithNamespace = @"using Z.CoreExtensions;
-using Z.DataExtensions;
+        public const string Template_WithNamespace = @"using MySql.Data.MySqlClient;
+using Z.Core.Extensions;
+using Z.Data.Extensions;
 
-namespace @(Model.Namespace)Extensions
+namespace @(Model.Namespace).Extensions
 {
 
 @(Model.Content)
@@ -35,7 +36,7 @@ namespace @(Model.Namespace)Extensions
 
 }";
 
-        public const string Template_Z_ExtensionMethods_WithObjectExtensions = @"using Z.ExtensionMethods.ObjectExtensions;
+        public const string Template_Z_ExtensionMethods_WithTwoNamespaceExtensions = @"using Z.ExtensionMethods.ObjectExtensions;
 
 namespace Z.ExtensionMethods
 {
@@ -43,6 +44,11 @@ namespace Z.ExtensionMethods
 @(Model.Content)
 
 }";
+
+        public const string Template_Z_ExtensionMethods_WithObjectExtensions = @"using Z.ExtensionMethods.ObjectExtensions;
+
+@(Model.Content)
+";
 
         public const string Template_Z_ExtensionMethods_ObjectExtensions = @"namespace Z.ExtensionMethods.ObjectExtensions
 {
@@ -103,7 +109,7 @@ namespace Z.ExtensionMethods
                     FileInfo newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
                     newFile.EnsureDirectoryExists();
 
-                    template = newFile.FullName.Contains("System.Object") ? Template_Z_ExtensionMethods_ObjectExtensions : Template_Z_ExtensionMethods_WithObjectExtensions;
+                    template = newFile.FullName.Contains("System.Object") ? Template_Z_ExtensionMethods_ObjectExtensions : Template_Z_ExtensionMethods_WithTwoNamespaceExtensions;
                     template.Replace("@(Model.Content)", x.ReadToEnd()).SaveAs(newFile);
                 });
             }
@@ -133,8 +139,9 @@ namespace Z.ExtensionMethods
                     int lastPos = x.FullName.IndexOf("\\", sourceDirectory.FullName.Length + 1, StringComparison.Ordinal);
                     string currentNamespace = x.FullName.Substring(sourceDirectory.FullName.Length + 1, lastPos - sourceDirectory.FullName.Length - 1);
                     template = Template_WithNamespace;
-                    template.Replace("@(Model.Namespace)", currentNamespace)
-                        .Replace("@(Model.Content)", x.ReadToEnd()).SaveAs(newFile);
+                    template
+                        .Replace("@(Model.Namespace)", currentNamespace)
+                        .Replace("@(Model.Content)", x.ReadToEnd().Replace("using MySql.Data.MySqlClient;", "")).SaveAs(newFile);
                 });
             }
         }
