@@ -104,6 +104,7 @@
     <Compile Include="System.Enum\Enum.GetCustomAttributeDescription.cs" />
     <Compile Include="System.Enum\Enum.In.cs" />
     <Compile Include="System.Enum\Enum.NotIn.cs" />
+    <Compile Include="System.Environment\SpecialFolder.GetFolderPath.cs" />
     <Compile Include="System.EventHandler[TEventArgs]\EventHandler[TEventArgs].RaiseEvent.cs" />
     <Compile Include="System.EventHandler\EventHandler.Raise.cs" />
     <Compile Include="System.EventHandler\EventHandler.RaiseEvent.cs" />
@@ -194,6 +195,7 @@
     <Compile Include="System.String\String.RemoveNumber.cs" />
     <Compile Include="System.String\String.RemoveWhere.cs" />
     <Compile Include="System.String\String.Repeat.cs" />
+    <Compile Include="System.String\String.Replace.cs" />
     <Compile Include="System.String\String.ReplaceByEmpty.cs" />
     <Compile Include="System.String\String.ReplaceFirst.cs" />
     <Compile Include="System.String\String.ReplaceLast.cs" />
@@ -214,6 +216,8 @@
     <Compile Include="System.String\String.ToXDocument.cs" />
     <Compile Include="System.String\String.ToXmlDocument.cs" />
     <Compile Include="System.String\String.Truncate.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoin.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoinLine.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineFormat.cs" />
     <Compile Include="System.TimeSpan\TimeSpan.Ago.cs" />
     <Compile Include="System.TimeSpan\TimeSpan.FromNow.cs" />
