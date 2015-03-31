@@ -89,6 +89,8 @@
     <Compile Include="System.Collections.Generic.IDictionary[TKey, TValue]\IDictionary[Tkey, TValue].GetOrAdd.cs" />
     <Compile Include="System.Collections.Generic.IDictionary[TKey, TValue]\IDictionary[Tkey, TValue].RemoveIfContainsKey.cs" />
     <Compile Include="System.Collections.Generic.IDictionary[TKey, TValue]\IDictionary[Tkey, TValue].ToSortedDictionary.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[IEnumerable[T]]\IEnumerable[IEnumerable[T]].MergeDistinctInnerEnumerable.cs" />
+    <Compile Include="System.Collections.Generic.IEnumerable[IEnumerable[T]]\IEnumerable[IEnumerable[T]].MergeInnerEnumerable.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ContainsAll.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ContainsAny.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[T]\IEnumerable[T].ForEach.cs" />

@@ -142,6 +142,7 @@
     <Compile Include="System.Object\Object.ToStringSafe.cs" />
     <Compile Include="System.Random\Random.CoinToss.cs" />
     <Compile Include="System.Random\Random.OneOf.cs" />
+    <Compile Include="System.String\String.StripHtml.cs" />
     <Compile Include="System.String\String.Br2Nl.cs" />
     <Compile Include="System.String\String.ConcatWith.cs" />
     <Compile Include="System.String\String.Contains.cs" />
@@ -218,6 +219,7 @@
     <Compile Include="System.String\String.Truncate.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoin.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoinLine.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.Substring.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineFormat.cs" />
     <Compile Include="System.TimeSpan\TimeSpan.Ago.cs" />
     <Compile Include="System.TimeSpan\TimeSpan.FromNow.cs" />

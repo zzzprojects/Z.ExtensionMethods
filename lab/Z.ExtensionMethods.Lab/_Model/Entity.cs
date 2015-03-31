@@ -1,6 +1,7 @@
 ﻿// file:	_Model\Entity.cs
 //
 // summary:	Implements the entity class
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
@@ -11,19 +12,34 @@ namespace Z.Reflection.Documentation.Test
     public class Entity
     {
         /// <summary>The field int.</summary>
-        public int FieldInt;
-        /// <summary>The property int.</summary>
-        public int PropertyInt;
+        public static int FieldInt = 3;
+
+        private int _propertyInt;
 
         /// <summary>Default constructor.</summary>
         public Entity()
         {
         }
+
         /// <summary>Constructor.</summary>
         /// <param name="param0">The parameter 0.</param>
         public Entity(int param0)
         {
         }
+
+        /// <summary>The property int.</summary>
+        public int PropertyInt { get; set; }
+
+        public int PropertyIntGet
+        {
+            get { return _propertyInt; }
+        }
+
+        public int PropertyIntSet
+        {
+            set { _propertyInt = value; }
+        }
+
         /// <summary>Indexer to get items within this collection using array index syntax.</summary>
         /// <param name="param0">The parameter 0.</param>
         /// <returns>The indexed item.</returns>
@@ -31,6 +47,7 @@ namespace Z.Reflection.Documentation.Test
         {
             get { return 1; }
         }
+
         /// <summary>Indexer to get items within this collection using array index syntax.</summary>
         /// <param name="param0">The parameter 0.</param>
         /// <param name="param1">The first parameter.</param>
@@ -39,12 +56,14 @@ namespace Z.Reflection.Documentation.Test
         {
             get { return 1; }
         }
+
         /// <summary>Method 0.</summary>
         /// <returns>An int.</returns>
         public int Method0()
         {
             return 1;
         }
+
         /// <summary>Method optional default value.</summary>
         /// <param name="param0">(Optional) The parameter 0.</param>
         /// <returns>An int.</returns>
@@ -52,6 +71,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method in.</summary>
         /// <param name="param">The parameter.</param>
         /// <returns>An int.</returns>
@@ -59,6 +79,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method out.</summary>
         /// <param name="param">The parameter.</param>
         /// <returns>An int.</returns>
@@ -66,6 +87,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method default value.</summary>
         /// <param name="param">The parameter.</param>
         /// <returns>An int.</returns>
@@ -73,6 +95,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method optional.</summary>
         /// <param name="param">The parameter.</param>
         /// <returns>An int.</returns>
@@ -80,6 +103,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method 1.</summary>
         /// <param name="param0">The parameter 0.</param>
         /// <returns>An int.</returns>
@@ -87,6 +111,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method 2.</summary>
         /// <param name="param0">The parameter 0.</param>
         /// <param name="param1">The first parameter.</param>
@@ -95,6 +120,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method out.</summary>
         /// <param name="param0">[in,out] The parameter 0.</param>
         /// <returns>An int.</returns>
@@ -103,6 +129,7 @@ namespace Z.Reflection.Documentation.Test
             param0 = 1;
             return 1;
         }
+
         /// <summary>Method reference.</summary>
         /// <param name="param0">[in,out] The parameter 0.</param>
         /// <returns>An int.</returns>
@@ -110,6 +137,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method parameters.</summary>
         /// <param name="list">A variable-length parameters list containing list.</param>
         /// <returns>An int.</returns>
@@ -117,6 +145,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return 1;
         }
+
         /// <summary>Method generic 1.</summary>
         /// <typeparam name="T">Generic type parameter.</typeparam>
         /// <param name="param0">The parameter 0.</param>
@@ -125,6 +154,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return param0;
         }
+
         /// <summary>Method generic 2.</summary>
         /// <typeparam name="T1">Generic type parameter.</typeparam>
         /// <typeparam name="T2">Generic type parameter.</typeparam>
@@ -135,6 +165,7 @@ namespace Z.Reflection.Documentation.Test
         {
             return param0;
         }
+
         /// <summary>Tests dictionary.</summary>
         /// <param name="abc">The abc.</param>
         /// <param name="abc2">The second abc.</param>

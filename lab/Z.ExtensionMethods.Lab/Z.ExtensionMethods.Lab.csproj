@@ -83,17 +83,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Z.Core\Z.Core.csproj">
-      <Project>{02f009f8-720b-4cbd-98ff-f2c33f4441d5}</Project>
-      <Name>Z.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\Z.IO\Z.IO.csproj">
-      <Project>{981d1a7a-dc30-4f93-8247-f2ad6d09e4ec}</Project>
-      <Name>Z.IO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\Z.Reflection\Z.Reflection.csproj">
-      <Project>{c3eda334-3d94-4960-93b9-3026adc4cc12}</Project>
-      <Name>Z.Reflection</Name>
+    <ProjectReference Include="..\..\src %28VB.NET%29\Z.ExtensionMethods.VB\Z.ExtensionMethods.VB.vbproj">
+      <Project>{e915f78f-041f-4fe7-a84b-e5406481c92a}</Project>
+      <Name>Z.ExtensionMethods.VB</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -505,6 +505,7 @@
     <Compile Include="System.Single\_CoreObject\Single.InRange.cs" />
     <Compile Include="System.Single\_CoreObject\Single.NotIn.cs" />
     <Compile Include="System.String\String.Br2Nl.cs" />
+    <Compile Include="System.String\String.StripHtml.cs" />
     <Compile Include="System.String\String.ConcatWith.cs" />
     <Compile Include="System.String\String.Contains.cs" />
     <Compile Include="System.String\String.ContainsAll.cs" />
@@ -624,6 +625,9 @@
     <Compile Include="System.String\_ExtractValueType\String.ExtractUInt32.cs" />
     <Compile Include="System.String\_ExtractValueType\String.ExtractUInt64.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoin.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.Substring.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.GetIndexAfterNextDoubleQuote.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.GetIndexAfterNextSingleQuote.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineJoin.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineFormat.cs" />
     <Compile Include="System.TimeSpan\TimeSpan.Ago.cs" />
