@@ -135,12 +135,6 @@
     <Compile Include="Z.Compression\GZip\System.IO.FileInfo\FileInfo.CreateGZip.vb" />
     <Compile Include="Z.Compression\GZip\System.IO.FileInfo\FileInfo.ExtractGZipToDirectory.vb" />
     <Compile Include="Z.Compression\GZip\System.String\String.CompressGZip.vb" />
-    <Compile Include="Z.Compression\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.vb" />
-    <Compile Include="Z.Compression\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.vb" />
-    <Compile Include="Z.Compression\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.vb" />
-    <Compile Include="Z.Compression\obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.vb" />
-    <Compile Include="Z.Compression\obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.vb" />
-    <Compile Include="Z.Compression\obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.vb" />
     <Compile Include="Z.Compression\ZipFile\System.IO.DirectoryInfo\DirectoryInfo.CreateZipFile.vb" />
     <Compile Include="Z.Compression\ZipFile\System.IO.FileInfo\FileInfo.ExtractZipFileToDirectory.vb" />
     <Compile Include="Z.Compression\ZipFile\System.IO.FileInfo\FileInfo.OpenReadZipFile.vb" />
