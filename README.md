@@ -1,6 +1,6 @@
 #![Logo](src/logo.png)#
 
-Z Extension Methods Library enhances the .NET Framework by adding hundreds of new methods. It drastically increases developers **productivity** and code **readability**.
+Z.ExtensionMethods Library enhances the .NET Framework by adding hundreds of new methods. It drastically increases developers **productivity** and code **readability**.
 
 ---
 
@@ -13,6 +13,6 @@ Z Extension Methods Library enhances the .NET Framework by adding hundreds of ne
 ---
 
 **Other Products**
-- [Entity Framework Extensions](http://www.zzzprojects.com/entity-framework-extensions/)
-- [Bulk Operations](http://www.zzzprojects.com/bulk-operations/)
-- [Icon Library](http://www.zzzprojects.com/icon-library/)
+- [.NET Entity Framework Extensions](http://www.zzzprojects.com/entity-framework-extensions/)
+- [.NET Bulk Operations](http://www.zzzprojects.com/bulk-operations/)
+- [.NET Icon Library](http://www.zzzprojects.com/icon-library/)
