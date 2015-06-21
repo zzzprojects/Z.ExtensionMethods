@@ -61,7 +61,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="String.IsAnagram.cs" />
     <Compile Include="System.Array\Array.ClearAll.cs" />
     <Compile Include="System.Array\Array.WithinIndex.cs" />
     <Compile Include="System.Boolean\Boolean.IfFalse.cs" />
