@@ -18,10 +18,10 @@ namespace Z.Core.Test
             string @this = "abba";
 
             // Examples
-            bool value1 = @this.IsAnagram("abba");  // return true;
-            bool value2 = @this.IsAnagram("abab");  // return false;
-            bool value3 = @this.IsAnagram("aba");   // return false;
-            bool value4 = @this.IsAnagram("");      // return false;
+            bool value1 = @this.IsAnagram("abba"); // return true;
+            bool value2 = @this.IsAnagram("abab"); // return false;
+            bool value3 = @this.IsAnagram("aba"); // return false;
+            bool value4 = @this.IsAnagram(""); // return false;
             bool value5 = @this.IsAnagram("aba b"); // return false;
 
             // Unit Test
