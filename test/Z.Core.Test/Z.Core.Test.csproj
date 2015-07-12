@@ -219,8 +219,11 @@
     <Compile Include="System.String\String.ToXDocument.cs" />
     <Compile Include="System.String\String.ToXmlDocument.cs" />
     <Compile Include="System.String\String.Truncate.cs" />
+    <Compile Include="System.String\String.Concatenate.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoin.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoinLine.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineIf.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendIf.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.Substring.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineFormat.cs" />
     <Compile Include="System.TimeSpan\TimeSpan.Ago.cs" />

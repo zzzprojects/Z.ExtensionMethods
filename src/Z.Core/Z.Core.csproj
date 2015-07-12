@@ -627,6 +627,9 @@
     <Compile Include="System.String\_ExtractValueType\String.ExtractUInt32.cs" />
     <Compile Include="System.String\_ExtractValueType\String.ExtractUInt64.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.AppendJoin.cs" />
+    <Compile Include="System.String\String.Concatenate.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendLineIf.cs" />
+    <Compile Include="System.Text.StringBuilder\StringBuilder.AppendIf.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.Substring.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.GetIndexAfterNextDoubleQuote.cs" />
     <Compile Include="System.Text.StringBuilder\StringBuilder.GetIndexAfterNextSingleQuote.cs" />
