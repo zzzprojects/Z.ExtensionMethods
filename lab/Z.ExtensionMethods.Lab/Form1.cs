@@ -6,6 +6,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -160,6 +161,11 @@ namespace Z.ExtensionMethods.Lab
             string tag2 = tag.StripHtml();
             var a = new[] {"a", "b", "c"};
             var b = new[] {"c", "d"};
+
+            using (var command = new SqlCommand())
+            {
+               // command.ExecuteDataSet();
+            }
 
             var c = new List<String[]> {a, b};
             IEnumerable<string> d = c.MergeInnerEnumerable();

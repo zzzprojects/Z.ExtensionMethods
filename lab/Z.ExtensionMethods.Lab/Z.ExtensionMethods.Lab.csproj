@@ -83,9 +83,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src %28VB.NET%29\Z.ExtensionMethods.VB\Z.ExtensionMethods.VB.vbproj">
-      <Project>{e915f78f-041f-4fe7-a84b-e5406481c92a}</Project>
-      <Name>Z.ExtensionMethods.VB</Name>
+    <ProjectReference Include="..\..\src\Z.Data.SQLite\Z.Data.SQLite.csproj">
+      <Project>{40cec7db-c8e6-4a24-8de7-9e0edf8708c6}</Project>
+      <Name>Z.Data.SQLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Z.Data\Z.Data.csproj">
+      <Project>{6edebb64-2d4b-43cc-a94e-919b44e254a2}</Project>
+      <Name>Z.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

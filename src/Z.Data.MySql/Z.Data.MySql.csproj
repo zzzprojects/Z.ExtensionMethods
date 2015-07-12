@@ -70,20 +70,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MySql.Data.MySqlClient.MySqlCommand\MySqlCommand.ExecuteDataSet.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlCommand\MySqlCommand.ExecuteDataTable.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteDataSet.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteDataTable.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteEntities.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteEntity.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteExpandoObject.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteExpandoObjects.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteNonQuery.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteReader.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteScalar.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteScalarAs.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.ExecuteScalarTo.cs" />
-    <Compile Include="MySql.Data.MySqlClient.MySqlParameterCollection\MySqlParameterCollection.AddRangeWithValue.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlCommand\MySqlCommand.MySqlExecuteDataSet.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlCommand\MySqlCommand.MySqlExecuteDataTable.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteDataSet.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteDataTable.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteEntities.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteEntity.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteExpandoObject.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteExpandoObjects.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteNonQuery.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteReader.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteScalar.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteScalarAs.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlConnection\MySqlConnection.MySqlExecuteScalarTo.cs" />
+    <Compile Include="MySql.Data.MySqlClient.MySqlParameterCollection\MySqlParameterCollection.MySqlAddRangeWithValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
