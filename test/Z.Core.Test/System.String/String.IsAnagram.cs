@@ -15,18 +15,18 @@ namespace Z.Core.Test
         public void IsAnagram()
         {
             // Type
-            string @this = "abba";
+            var @this = "abba";
 
             // Examples
-            bool value1 = @this.IsAnagram("abba");  // return true;
-            bool value2 = @this.IsAnagram("abab");  // return false;
-            bool value3 = @this.IsAnagram("aba");   // return false;
-            bool value4 = @this.IsAnagram("");      // return false;
-            bool value5 = @this.IsAnagram("aba b"); // return false;
+            var value1 = @this.IsAnagram("abba"); // return true;
+            var value2 = @this.IsAnagram("abab"); // return true;
+            var value3 = @this.IsAnagram("aba"); // return false;
+            var value4 = @this.IsAnagram(""); // return false;
+            var value5 = @this.IsAnagram("aba b"); // return false;
 
             // Unit Test
             Assert.IsTrue(value1);
-            Assert.IsFalse(value2);
+            Assert.IsTrue(value2);
             Assert.IsFalse(value3);
             Assert.IsFalse(value4);
             Assert.IsFalse(value5);
