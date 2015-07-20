@@ -4,6 +4,7 @@
 // Feedback / Feature Requests / Issues : http://zzzprojects.uservoice.com/forums/283927
 // All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
 
+using System;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -22,7 +23,7 @@ namespace Z.Core.Test
             @this.AppendLineIf(x => x.Contains("F"), "Fizz", "Buzz"); // return "FizzBuzz";
 
             // Unit Test
-            Assert.AreEqual("Fizz", @this.ToString());
+            Assert.AreEqual("Fizz" + Environment.NewLine, @this.ToString());
         }
     }
 }

@@ -18,7 +18,6 @@ public static partial class Extensions
     public static string GetDeclaraction(this FieldInfo @this)
     {
         // Example: [Visibility] [Modifier] [Type] [Name] [PostModifier];
-
         var sb = new StringBuilder();
 
         // Variable

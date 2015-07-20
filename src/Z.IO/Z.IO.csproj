@@ -66,6 +66,7 @@
     <Compile Include="System.Collections.Generic.IEnumerable[string]\IEnumerable[string].PathCombine.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[DirectoryInfo]\IEnumerable[DirectoryInfo].Delete.cs" />
     <Compile Include="System.Collections.Generic.IEnumerable[DirectoryInfo]\IEnumerable[DirectoryInfo].ForEach.cs" />
+    <Compile Include="System.IO.DirectoryInfo\DirectoryInfo.CopyTo.cs" />
     <Compile Include="System.IO.DirectoryInfo\DirectoryInfo.Clear.cs" />
     <Compile Include="System.IO.DirectoryInfo\DirectoryInfo.CreateAllDirectories.cs" />
     <Compile Include="System.IO.DirectoryInfo\DirectoryInfo.DeleteDirectoriesWhere.cs" />

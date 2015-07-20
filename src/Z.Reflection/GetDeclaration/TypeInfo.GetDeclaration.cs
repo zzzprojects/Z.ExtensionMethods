@@ -5,6 +5,7 @@
 // All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -37,6 +38,8 @@ public static partial class Extensions
         // Name
         sb.Append(@this.IsGenericType ? @this.Name.Substring(0, @this.Name.IndexOf('`')) : @this.Name);
 
+        List<string> constraintType = new List<string>();
+
         // GenericArguments
         if (@this.IsGenericType)
         {
@@ -44,39 +47,71 @@ public static partial class Extensions
             sb.Append("<");
             sb.Append(string.Join(", ", arguments.Select(x =>
             {
-                Type[] constraints = x.GetGenericParameterConstraints();
+                GenericParameterAttributes sConstraints = x.GenericParameterAttributes;
 
-                foreach (Type constraint in constraints)
+                if (GenericParameterAttributes.None != (sConstraints & GenericParameterAttributes.Contravariant))
                 {
-                    GenericParameterAttributes gpa = constraint.GenericParameterAttributes;
-                    GenericParameterAttributes variance = gpa & GenericParameterAttributes.VarianceMask;
+                    sb.Append("in ");
+                }
+                if (GenericParameterAttributes.None != (sConstraints & GenericParameterAttributes.Covariant))
+                {
+                    sb.Append("out ");
+                }
 
-                    if (variance != GenericParameterAttributes.None)
-                    {
-                        sb.Append((variance & GenericParameterAttributes.Covariant) != 0 ? "in " : "out ");
-                    }
+                List<string> parameterConstraint = new List<string>();
+
+                if (GenericParameterAttributes.None != (sConstraints & GenericParameterAttributes.ReferenceTypeConstraint))
+                {
+                    parameterConstraint.Add("class");
+                }
+
+
+                if (GenericParameterAttributes.None != (sConstraints & GenericParameterAttributes.DefaultConstructorConstraint))
+                {
+                    parameterConstraint.Add("new()");
+                }
+
+       
+                if (parameterConstraint.Count > 0)
+                {
+                    constraintType.Add(x.Name + " : " + string.Join(", " , parameterConstraint));
                 }
 
                 return x.GetShortDeclaraction();
             })));
             sb.Append(">");
+
+            foreach (var argument in arguments)
+            {
+                GenericParameterAttributes sConstraints = argument.GenericParameterAttributes & GenericParameterAttributes.SpecialConstraintMask;
+            }
         }
+
+        List<string> constaints = new List<string>();
 
         // Inherited Class
         if (@this.BaseType != null && @this.BaseType != typeof (object))
         {
-            hasInheritedClass = true;
-
-            sb.Append(" : ");
-            sb.Append(@this.BaseType.GetShortDeclaraction());
+            constaints.Add(@this.BaseType.GetShortDeclaraction());
         }
-
+        
         // Inherited Interface
         Type[] interfaces = @this.GetInterfaces();
         if (interfaces.Length > 0)
         {
-            sb.Append(hasInheritedClass ? ", " : " : ");
-            sb.Append(string.Join(", ", interfaces.Select(x => x.Name)));
+            constaints.AddRange(interfaces.Select(x => x.Name));
+        }
+
+        if (constaints.Count > 0)
+        {
+            sb.Append(" : ");
+            sb.Append(string.Join(", ", constaints));
+        }
+
+        if (constraintType.Count > 0)
+        {
+            sb.Append(" where ");
+            sb.Append(string.Join(", ", constraintType));
         }
 
         return sb.ToString();

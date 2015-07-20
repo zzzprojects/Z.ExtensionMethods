@@ -471,6 +471,7 @@
     <Compile Include="System.Object\Utility\Object.CoalesceOrDefault.cs" />
     <Compile Include="System.Object\Utility\Object.GetValueOrDefault.cs" />
     <Compile Include="System.Object\Utility\Object.IfNotNull.cs" />
+    <Compile Include="System.Object\Utility\Object.Try.cs" />
     <Compile Include="System.Object\Utility\Object.NullIf.cs" />
     <Compile Include="System.Object\Utility\Object.NullIfEquals.cs" />
     <Compile Include="System.Object\Utility\Object.NullIfEqualsAny.cs" />

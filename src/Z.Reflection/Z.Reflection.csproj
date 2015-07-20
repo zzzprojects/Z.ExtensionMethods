@@ -71,6 +71,15 @@
     <Compile Include="GetDeclaration\MethodInfo.GetDeclaration.cs" />
     <Compile Include="GetDeclaration\ConstructorInfo.GetDeclaration.cs" />
     <Compile Include="GetDeclaration\MemberInfo.GetDeclaration.cs" />
+    <Compile Include="GetSignature\ConstructorInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\EvenInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\FieldInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\MemberInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\MethodInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\ParameterInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\PropertyInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\TypeInfo.GetSignature.cs" />
+    <Compile Include="GetSignature\_Helper\TypeInfo.GetShortSignature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System.Object\Object.GetCustomAttribute.cs" />
     <Compile Include="System.Object\Object.GetCustomAttributeDescription.cs" />

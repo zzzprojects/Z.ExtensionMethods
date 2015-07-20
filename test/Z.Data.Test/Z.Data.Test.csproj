@@ -122,18 +122,6 @@
     <Compile Include="System.Data.SqlClient.SqlParameterCollection\SqlParameterCollection.AddRangeWithValue.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Z.Data.MySql\Z.Data.MySql.csproj">
-      <Project>{0de7197d-d4e1-49e4-b9da-29ff24747a63}</Project>
-      <Name>Z.Data.MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\Z.Data.SQLite\Z.Data.SQLite.csproj">
-      <Project>{40cec7db-c8e6-4a24-8de7-9e0edf8708c6}</Project>
-      <Name>Z.Data.SQLite</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\Z.Data.SqlServerCe\Z.Data.SqlServerCe.csproj">
-      <Project>{33c74c96-2394-4442-82ad-deb6c8df233f}</Project>
-      <Name>Z.Data.SqlServerCe</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\src\Z.Data\Z.Data.csproj">
       <Project>{6edebb64-2d4b-43cc-a94e-919b44e254a2}</Project>
       <Name>Z.Data</Name>

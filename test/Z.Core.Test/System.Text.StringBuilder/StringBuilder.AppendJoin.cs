@@ -14,7 +14,7 @@ namespace Z.Core.Test
     public class System_Text_StringBuilder_AppendJoin
     {
         [TestMethod]
-        public void AppendLineFormat()
+        public void AppendJoin()
         {
             var list = new List<string> {"Fizz", "Buzz"};
 
@@ -23,7 +23,7 @@ namespace Z.Core.Test
 
 
             // Exemples
-            @this.AppendJoin(",", list); // return "Fizz,Buzz";
+            @this.AppendJoin(",", list.ToArray()); // return "Fizz,Buzz";
 
             // Unit Test
             Assert.AreEqual("Fizz,Buzz", @this.ToString());

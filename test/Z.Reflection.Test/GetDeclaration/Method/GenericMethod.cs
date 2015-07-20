@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Z.Reflection.Test
 {
     [TestClass]
-    public class Method_GetDeclarationGenericMethod
+    public class Method_GetDeclaration_GenericMethod
     {
         [TestMethod]
         public void GetDeclaraction()
