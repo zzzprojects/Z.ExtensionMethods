@@ -1,19 +1,20 @@
 #![Logo](src/logo.png)#
 
-Z.ExtensionMethods Library enhances the .NET Framework by adding hundreds of new methods. It drastically increases developers **productivity** and code **readability**.
+Free and open source library with over 1000 helpers and utility methods coded in C# and VB.NET. Five different architectures available.
 
 ---
 
 - [Homepage](http://www.zzzprojects.com)
-- [Product Page](http://www.zzzprojects.com/extension-methods/)
+- [Product Page](http://www.zzzprojects.com/products/dotnet-development/extension-methods/)
 - [UserVoice](http://www.zzzprojects.uservoice.com/forums/283927)
 - [Downloads](http://www.zzzprojects.com/products/)
-- [Guides](http://www.zzzprojects.com/guides/extension-methods/index.html)
+- [Documentation](http://www.zzzprojects.com/documentations/dotnet/extension-methods/)
 
 ---
 
 **Other Products**
-- [.NET Entity Framework Extensions](http://www.zzzprojects.com/entity-framework-extensions/)
-- [.NET Compiler] (http://www.zzzprojects.com/net-compiler/)
-- [SQL.NET] (http://www.zzzprojects.com/sql-net/)
-- [.NET Extension Methods](http://www.zzzprojects.com/extension-methods/)
+- [.NET Entity Framework Extensions](http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/)
+- [.NET Bulk Operations](http://www.zzzprojects.com/products/dotnet-development/bulk-operations/)
+- [.NET Runtime Compiler] (http://www.zzzprojects.com/products/dotnet-development/runtime-compiler/)
+- [SQL.NET] (http://www.zzzprojects.com/products/sql-development/sql-net/)
+- [.NET Extension Methods](http://www.zzzprojects.com/products/dotnet-development/extension-methods/)
