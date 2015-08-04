@@ -17,4 +17,3 @@ Z.ExtensionMethods Library enhances the .NET Framework by adding hundreds of new
 - [.NET Compiler] (http://www.zzzprojects.com/net-compiler/)
 - [SQL.NET] (http://www.zzzprojects.com/sql-net/)
 - [.NET Extension Methods](http://www.zzzprojects.com/extension-methods/)
-- [.NET Icon Library](http://www.zzzprojects.com/icon-library/)
