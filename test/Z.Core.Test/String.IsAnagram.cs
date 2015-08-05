@@ -16,20 +16,19 @@ namespace Z.Core.Test
         {
             // Type
             string @this = "abba";
+            string @thisNotAnagram = "abab";
+            string @thisIsEmpty = "";
 
             // Examples
-            bool value1 = @this.IsAnagram("abba");  // return true;
-            bool value2 = @this.IsAnagram("abab");  // return false;
-            bool value3 = @this.IsAnagram("aba");   // return false;
-            bool value4 = @this.IsAnagram("");      // return false;
-            bool value5 = @this.IsAnagram("aba b"); // return false;
-
+            bool value1 = @this.IsAnagram();            // return true;
+            bool value2 = @thisNotAnagram.IsAnagram();  // return false;
+            bool value3 = @thisIsEmpty.IsAnagram();     // return true because reverse an empty string is an empty string;
+            
             // Unit Test
             Assert.IsTrue(value1);
             Assert.IsFalse(value2);
-            Assert.IsFalse(value3);
-            Assert.IsFalse(value4);
-            Assert.IsFalse(value5);
+            Assert.IsTrue(value3);
+            
         }
     }
 }
