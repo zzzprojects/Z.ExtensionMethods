@@ -33,7 +33,11 @@ namespace Z.Core.Test
             Assert.IsTrue(value1);
             Assert.IsFalse(value2);
             Assert.IsTrue(value3);
-            
+            Assert.IsTrue(value4);
+            Assert.IsFalse(value5);
+            Assert.IsTrue(value6);
+
+
         }
     }
 }
