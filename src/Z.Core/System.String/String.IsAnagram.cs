@@ -10,12 +10,17 @@ using System.Linq;
 public static partial class Extensions
 {
     /// <summary>
-    ///     A string extension method that query if '@this' is anagram of other String.
+    ///     A string extension method that query if '@this' is anagram.
     /// </summary>
     /// <param name="this">The @this to act on.</param>
+    /// <param name="otherString">The @otherString[optional parameter] to act on.</param>
     /// <returns>true if anagram, false if not.</returns>
-    public static bool IsAnagram(this string @this)
+    public static bool IsAnagram(this string @this, string @otherString=null)
     {
+        if (@otherString!=null)
+        {
+            return @this == @otherString.Reverse();
+        }
         return @this == @this.Reverse();
     }
 }

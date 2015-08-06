@@ -15,14 +15,19 @@ namespace Z.Core.Test
         public void IsAnagram()
         {
             // Type
-            string @this = "abba";
+            string @thisAnagram = "abba";
             string @thisNotAnagram = "abab";
-            string @thisIsEmpty = "";
+            string @EmptyString = "";
+            string @otherString = "abba";
 
             // Examples
-            bool value1 = @this.IsAnagram();            // return true;
-            bool value2 = @thisNotAnagram.IsAnagram();  // return false;
-            bool value3 = @thisIsEmpty.IsAnagram();     // return true because reverse an empty string is an empty string;
+            bool value1 = @thisAnagram.IsAnagram();                 // return true;
+            bool value2 = @thisNotAnagram.IsAnagram();              // return false;
+            bool value3 = @EmptyString.IsAnagram();                 // return true because reverse an empty string is an empty string;
+            bool value4 = @thisAnagram.IsAnagram(@otherString);     // return true;
+            bool value5 = @thisNotAnagram.IsAnagram(@otherString);  // return false;
+            bool value6 = @EmptyString.IsAnagram(@EmptyString);     // return true;
+
             
             // Unit Test
             Assert.IsTrue(value1);
