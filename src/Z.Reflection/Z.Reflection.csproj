@@ -81,6 +81,10 @@
     <Compile Include="GetSignature\TypeInfo.GetSignature.cs" />
     <Compile Include="GetSignature\_Helper\TypeInfo.GetShortSignature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Object\Object.GetCustomAttributesByFullName.cs" />
+    <Compile Include="System.Object\Object.GetCustomAttributeByFullName.cs" />
+    <Compile Include="System.Object\Object.GetCustomAttributesByName.cs" />
+    <Compile Include="System.Object\Object.GetCustomAttributeByName.cs" />
     <Compile Include="System.Object\Object.GetCustomAttribute.cs" />
     <Compile Include="System.Object\Object.GetCustomAttributeDescription.cs" />
     <Compile Include="System.Object\Object.GetCustomAttributes.cs" />

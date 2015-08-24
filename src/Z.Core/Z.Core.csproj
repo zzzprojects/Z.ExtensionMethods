@@ -100,6 +100,7 @@
     <Compile Include="System.ByteArray\System.Web.HttpUtility\ByteArray.UrlDecodeToBytes.cs" />
     <Compile Include="System.ByteArray\System.Web.HttpUtility\ByteArray.UrlEncode.cs" />
     <Compile Include="System.ByteArray\System.Web.HttpUtility\ByteArray.UrlEncodeToBytes.cs" />
+    <Compile Include="System.Byte\Byte.SqlSystemTypeToSqlDbType.cs" />
     <Compile Include="System.Byte\System.Math\Byte.Max.cs" />
     <Compile Include="System.Byte\System.Math\Byte.Min.cs" />
     <Compile Include="System.Char\Char.Repeat.cs" />
@@ -278,6 +279,7 @@
     <Compile Include="System.Int16\GenericInt\Int16.Minutes.cs" />
     <Compile Include="System.Int16\GenericInt\Int16.Seconds.cs" />
     <Compile Include="System.Int16\GenericInt\Int16.Weeks.cs" />
+    <Compile Include="System.Int16\Int16.SqlSystemTypeToSqlDbType.cs" />
     <Compile Include="System.Int16\System.BitConverter\Int16.GetBytes.cs" />
     <Compile Include="System.Int16\System.Math\Int16.Abs.cs" />
     <Compile Include="System.Int16\System.Math\Int16.Max.cs" />
@@ -300,6 +302,7 @@
     <Compile Include="System.Int32\GenericInt\Int32.Minutes.cs" />
     <Compile Include="System.Int32\GenericInt\Int32.Seconds.cs" />
     <Compile Include="System.Int32\GenericInt\Int32.Weeks.cs" />
+    <Compile Include="System.Int32\Int.SqlSystemTypeToSqlDbType.cs" />
     <Compile Include="System.Int32\System.BitConverter\Int32.GetBytes.cs" />
     <Compile Include="System.Int32\System.Char\Int32.ConvertFromUtf32.cs" />
     <Compile Include="System.Int32\System.DateTime\Int32.DaysInMonth.cs" />
@@ -508,6 +511,7 @@
     <Compile Include="System.String\String.Br2Nl.cs" />
     <Compile Include="System.String\String.IsPalindrome.cs" />
     <Compile Include="System.String\String.IsAnagram.cs" />
+    <Compile Include="System.String\String.SqlTypeNameToSqlDbType.cs" />
     <Compile Include="System.String\String.StripHtml.cs" />
     <Compile Include="System.String\String.ConcatWith.cs" />
     <Compile Include="System.String\String.Contains.cs" />

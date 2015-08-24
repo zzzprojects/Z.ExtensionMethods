@@ -190,6 +190,12 @@
     <Compile Include="GetDeclaration\Type\GenericClassWithWhereClause.cs" />
     <Compile Include="GetDeclaration\Type\IGenericInterfaceWithInParameter.cs" />
     <Compile Include="GetDeclaration\Type\IGenericInterfaceWithOutParameter.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttributesByFullName.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttributeByFullName.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttributesByName.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttributeByName.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttribute.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttributes.cs" />
     <Compile Include="_Model\ConstructorModel.cs" />
     <Compile Include="_Model\MethodModel.cs" />
     <Compile Include="_Model\PropertyModel.cs" />
@@ -197,7 +203,7 @@
     <Compile Include="_Model\TypeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GetDeclaration\Type\StaticClass.cs" />
-    <Compile Include="System.Object\Object.GetCustomAttributeDescription.cs" />
+    <Compile Include="GetCustomAttribute\Object.GetCustomAttributeDescription.cs" />
     <Compile Include="System.Object\Object.GetFieldValue.cs" />
     <Compile Include="System.Object\Object.GetProperty.cs" />
     <Compile Include="System.Object\Object.IsTypeOrInheritsOf.cs" />

@@ -13,10 +13,15 @@ using System.Windows.Forms;
 
 namespace Z.ExtensionMethods.Lab
 {
+    public class MyClass
+    {
+        
+    }
     public static class LabExtension
     {
         public static IEnumerable<T> MergeInnerEnumerable<T>(this IEnumerable<IEnumerable<T>> @this)
         {
+            var file = @"c:\path";
             List<IEnumerable<T>> listItem = @this.ToList();
 
             var list = new List<T>();
@@ -153,6 +158,8 @@ namespace Z.ExtensionMethods.Lab
         {
             InitializeComponent();
 
+            var aaaa = (Attribute)null;
+    
             StringBuilder sb = new StringBuilder("0123456789");
             var b4 = "abc".Substring(1, 4);
             char ch = '\'';

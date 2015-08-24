@@ -91,6 +91,10 @@
       <Project>{6edebb64-2d4b-43cc-a94e-919b44e254a2}</Project>
       <Name>Z.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\Z.Reflection\Z.Reflection.csproj">
+      <Project>{c3eda334-3d94-4960-93b9-3026adc4cc12}</Project>
+      <Name>Z.Reflection</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
