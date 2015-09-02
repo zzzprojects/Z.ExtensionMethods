@@ -5,7 +5,6 @@
 // All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
 
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,12 +14,10 @@ namespace Z.ExtensionMethods.Tool.GenerateFramework
     public partial class MainForm : Form
     {
         public const string Template_NoNamespace = "@(Model.Content)";
-
         public const string Template_NoNamespace_WithObjectNamespace = @"using Z.ExtensionMethods.ObjectExtensions;
 
 @(Model.Content)";
-        public const string Template_WithNamespace = @"using MySql.Data.MySqlClient;
-using Z.Core.Extensions;
+        public const string Template_WithNamespace = @"using Z.Core.Extensions;
 using Z.Data.Extensions;
 
 namespace @(Model.Namespace).Extensions
@@ -35,7 +32,6 @@ namespace @(Model.Namespace).Extensions
 @(Model.Content)
 
 }";
-
         public const string Template_Z_ExtensionMethods_WithTwoNamespaceExtensions = @"using Z.ExtensionMethods.ObjectExtensions;
 
 namespace Z.ExtensionMethods
@@ -44,12 +40,10 @@ namespace Z.ExtensionMethods
 @(Model.Content)
 
 }";
-
         public const string Template_Z_ExtensionMethods_WithObjectExtensions = @"using Z.ExtensionMethods.ObjectExtensions;
 
 @(Model.Content)
 ";
-
         public const string Template_Z_ExtensionMethods_ObjectExtensions = @"namespace Z.ExtensionMethods.ObjectExtensions
 {
 
@@ -62,15 +56,18 @@ namespace Z.ExtensionMethods
             InitializeComponent();
 
             // CLEAR OutputDirectory
-            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            DirectoryInfo outputDirectory = My.Config.AppSettings.OutputDirectoryPath.Replace("{DesktopPath}", desktopPath).ToDirectoryInfo();
+            var desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            var outputDirectory = My.Config.AppSettings.OutputDirectoryPath.Replace("{DesktopPath}", desktopPath).ToDirectoryInfo();
             outputDirectory.EnsureDirectoryExists();
             outputDirectory.Clear();
 
             // GET files
-            DirectoryInfo sourceDirectory = Environment.CurrentDirectory.PathCombine("..\\".Repeat(4), "src").ToDirectoryInfo();
-            List<FileInfo> list = sourceDirectory.GetFiles("*.cs", SearchOption.AllDirectories).
-                Where(x => !x.FullName.Contains("\\Properties\\")).ToList();
+            var sourceDirectory = Environment.CurrentDirectory.PathCombine("..\\".Repeat(4), "src").ToDirectoryInfo();
+            var list = sourceDirectory.GetFiles("*.cs", SearchOption.AllDirectories)
+                .Where(x => !x.FullName.Contains("\\Properties\\"))
+                .Where(x => !x.FullName.Contains("\\Z.Data.MySql\\"))
+                .Where(x => !x.FullName.Contains("\\Z.Data.SQLite\\"))
+                .Where(x => !x.FullName.Contains("\\Z.Data.SqlServerCe\\")).ToList();
 
             DirectoryInfo workingDirectory;
             string template;
@@ -80,7 +77,7 @@ namespace Z.ExtensionMethods
                 workingDirectory = outputDirectory.CreateSubdirectory("Z.ExtensionMethods");
                 list.ForEach(x =>
                 {
-                    FileInfo newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
+                    var newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
                     newFile.EnsureDirectoryExists();
 
                     template = Template_NoNamespace;
@@ -93,7 +90,7 @@ namespace Z.ExtensionMethods
                 workingDirectory = outputDirectory.CreateSubdirectory("Z.ExtensionMethods.WithOneNamespace");
                 list.ForEach(x =>
                 {
-                    FileInfo newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
+                    var newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
                     newFile.EnsureDirectoryExists();
 
                     template = Template_Z_ExtensionMethods;
@@ -106,7 +103,7 @@ namespace Z.ExtensionMethods
                 workingDirectory = outputDirectory.CreateSubdirectory("Z.ExtensionMethods.WithTwoNamespace");
                 list.ForEach(x =>
                 {
-                    FileInfo newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
+                    var newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
                     newFile.EnsureDirectoryExists();
 
                     template = newFile.FullName.Contains("System.Object") ? Template_Z_ExtensionMethods_ObjectExtensions : Template_Z_ExtensionMethods_WithTwoNamespaceExtensions;
@@ -120,7 +117,7 @@ namespace Z.ExtensionMethods
                 workingDirectory = outputDirectory.CreateSubdirectory("Z.ExtensionMethods.WithObjectNamespace");
                 list.ForEach(x =>
                 {
-                    FileInfo newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
+                    var newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
                     newFile.EnsureDirectoryExists();
 
                     template = newFile.FullName.Contains("System.Object") ? Template_Z_ExtensionMethods_ObjectExtensions : Template_Z_ExtensionMethods_WithObjectExtensions;
@@ -133,15 +130,33 @@ namespace Z.ExtensionMethods
                 workingDirectory = outputDirectory.CreateSubdirectory("Z.ExtensionMethods.WithNamespace");
                 list.ForEach(x =>
                 {
-                    FileInfo newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
+                    var newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
                     newFile.EnsureDirectoryExists();
 
-                    int lastPos = x.FullName.IndexOf("\\", sourceDirectory.FullName.Length + 1, StringComparison.Ordinal);
-                    string currentNamespace = x.FullName.Substring(sourceDirectory.FullName.Length + 1, lastPos - sourceDirectory.FullName.Length - 1);
+                    var lastPos = x.FullName.IndexOf("\\", sourceDirectory.FullName.Length + 1, StringComparison.Ordinal);
+                    var currentNamespace = x.FullName.Substring(sourceDirectory.FullName.Length + 1, lastPos - sourceDirectory.FullName.Length - 1);
                     template = Template_WithNamespace;
                     template
                         .Replace("@(Model.Namespace)", currentNamespace)
                         .Replace("@(Model.Content)", x.ReadToEnd().Replace("using MySql.Data.MySqlClient;", "")).SaveAs(newFile);
+                });
+            }
+
+            // DB Specialized
+            {
+                var listSpecialized = sourceDirectory.GetFiles("*.cs", SearchOption.AllDirectories)
+                    .Where(x => !x.FullName.Contains("\\Properties\\"))
+                    .Where(x => x.FullName.Contains("\\Z.Data.MySql\\") || x.FullName.Contains("\\Z.Data.SQLite\\") || x.FullName.Contains("\\Z.Data.SqlServerCe\\"))
+                    .ToList();
+
+                workingDirectory = outputDirectory;
+                listSpecialized.ForEach(x =>
+                {
+                    var newFile = x.FullName.Replace(sourceDirectory.FullName, workingDirectory.FullName).ToFileInfo();
+                    newFile.EnsureDirectoryExists();
+
+                    template = Template_NoNamespace;
+                    template.Replace("@(Model.Content)", x.ReadToEnd()).SaveAs(newFile);
                 });
             }
         }

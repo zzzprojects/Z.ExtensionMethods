@@ -72,30 +72,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteCommand\SQLiteCommand.SQLiteExecuteDataSet.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteCommand\SQLiteCommand.SQLiteExecuteDataTable.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteDataSet.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteDataTable.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteEntities.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteEntity.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteExpandoObject.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteExpandoObjects.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteNonQuery.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteReader.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteScalar.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteScalarAs.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.SQLiteExecuteScalarTo.cs" />
-    <Compile Include="System.Data.SQLite.SQLiteParameterCollection\SQLiteParameterCollection.SQLiteAddRangeWithValue.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Z.Core\Z.Core.csproj">
-      <Project>{02f009f8-720b-4cbd-98ff-f2c33f4441d5}</Project>
-      <Name>Z.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Z.Data\Z.Data.csproj">
-      <Project>{6edebb64-2d4b-43cc-a94e-919b44e254a2}</Project>
-      <Name>Z.Data</Name>
-    </ProjectReference>
+    <Compile Include="System.Data.SQLite.SQLiteCommand\SQLiteCommand.ExecuteDataSet.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteCommand\SQLiteCommand.ExecuteDataTable.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteDataSet.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteDataTable.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteEntities.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteEntity.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteExpandoObject.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteExpandoObjects.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteNonQuery.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteReader.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteScalar.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteScalarAs.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteConnection\SQLiteConnection.ExecuteScalarTo.cs" />
+    <Compile Include="System.Data.SQLite.SQLiteParameterCollection\SQLiteParameterCollection.AddRangeWithValue.cs" />
+    <Compile Include="_Internal\IDataReader.ToEntities.cs" />
+    <Compile Include="_Internal\IDataReader.ToEntity.cs" />
+    <Compile Include="_Internal\IDataReader.ToExpandoObject.cs" />
+    <Compile Include="_Internal\IDataReader.ToExpandoObjects.cs" />
+    <Compile Include="_Internal\Object.As.cs" />
+    <Compile Include="_Internal\Object.To.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

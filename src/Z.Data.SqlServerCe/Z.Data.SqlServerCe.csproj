@@ -72,30 +72,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeCommand\SqlCeCommand.SqlCeExecuteDataSet.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeCommand\SqlCeCommand.SqlCeExecuteDataTable.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteDataSet.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteDataTable.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteEntities.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteEntity.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteExpandoObject.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteExpandoObjects.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteNonQuery.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteReader.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteScalar.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteScalarAs.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.SqlCeExecuteScalarTo.cs" />
-    <Compile Include="System.Data.SqlServerCe.SqlCeParameterCollection\SqlCeParameterCollection.SqlCeAddRangeWithValue.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Z.Core\Z.Core.csproj">
-      <Project>{02f009f8-720b-4cbd-98ff-f2c33f4441d5}</Project>
-      <Name>Z.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Z.Data\Z.Data.csproj">
-      <Project>{6edebb64-2d4b-43cc-a94e-919b44e254a2}</Project>
-      <Name>Z.Data</Name>
-    </ProjectReference>
+    <Compile Include="System.Data.SqlServerCe.SqlCeCommand\SqlCeCommand.ExecuteDataSet.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeCommand\SqlCeCommand.ExecuteDataTable.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteDataSet.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteDataTable.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteEntities.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteEntity.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteExpandoObject.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteExpandoObjects.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteNonQuery.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteReader.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteScalar.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteScalarAs.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeConnection\SqlCeConnection.ExecuteScalarTo.cs" />
+    <Compile Include="System.Data.SqlServerCe.SqlCeParameterCollection\SqlCeParameterCollection.AddRangeWithValue.cs" />
+    <Compile Include="_Internal\IDataReader.ToEntities.cs" />
+    <Compile Include="_Internal\IDataReader.ToEntity.cs" />
+    <Compile Include="_Internal\IDataReader.ToExpandoObject.cs" />
+    <Compile Include="_Internal\IDataReader.ToExpandoObjects.cs" />
+    <Compile Include="_Internal\Object.As.cs" />
+    <Compile Include="_Internal\Object.To.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
