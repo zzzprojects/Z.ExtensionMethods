@@ -1,5 +1,3 @@
-#![Logo](src/logo.png)#
-
 Free and open source library with over 1000 helpers and utility methods coded in C# and VB.NET. Five different architectures available.
 
 ---
