@@ -1,9 +1,6 @@
 Free and open source library with over 1000 helpers and utility methods coded in C# and VB.NET. Five different architectures available.
 
-
-- [Homepage](http://www.zzzprojects.com)
 - [Product Page](http://www.zzzprojects.com/products/dotnet-development/extension-methods/)
-- [UserVoice](http://www.zzzprojects.uservoice.com/forums/283927)
 - [Downloads](http://www.zzzprojects.com/products/)
 - [Documentation](http://www.zzzprojects.com/documentations/dotnet/extension-methods/)
 
