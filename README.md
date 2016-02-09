@@ -9,16 +9,18 @@ Stay updated with latest changes
 <a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
 <a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
-## Contributing
-_You received support from us and/or the FREE version helped you?_
+## Contribution
 
-Contribute to keep us developing FREE features and to thank us for our support.
+Supporting & developing FREE features takes **hundreds** and **thousands** of hours! If you like our product please consider making a donation to keep us running.
 
-We'll never require donations, but we appreciate them greatly
+<a href="http://www.zzzprojects.com/contribute/" target="_blank"><img src="http://www.zzzprojects.com/images/paypal-contribute-2.png" alt="Contribute" height="48"></a>
 
-<a href="http://www.zzzprojects.com/contribute/" target="_blank"><img src="http://www.zzzprojects.com/images/paypal-contribute.png" alt="Contribute" height="48"></a>
+Contribution isn't all about money!
+ - Blog it
+ - Comment it
+ - Share it
 
-A **huge thanks** for your extra support.
+A **HUGE thanks** for your extra support.
 
 
 ## More Projects
