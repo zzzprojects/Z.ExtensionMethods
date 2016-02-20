@@ -1,7 +1,23 @@
+## Download
+
+Full Version | NuGet
+------------ | :-------------:
+Z.ExtensionMethods (Recommended)       | <a href="https://www.nuget.org/packages/Z.ExtensionMethods/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-v.svg" alt="download" /></a><a href="https://www.nuget.org/packages/Z.ExtensionMethods/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-d.svg" alt="" /></a>
+Z.ExtensionMethods.WithObjectNamespace | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithObjectNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-object-namespace-v.svg" alt="download" /></a><a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithObjectNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-object-namespace-d.svg" alt="" /></a>
+Z.ExtensionMethods.WithOneNamespace    | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithOneNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-one-namespace-v.svg" alt="download" /></a><a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithOneNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-one-namespace-d.svg" alt="" /></a>
+Z.ExtensionMethods.WithTwoNamespace    | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithTwoNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-two-namespace-v.svg" alt="download" /></a><a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithTwoNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-two-namespace-d.svg" alt="" /></a>
+Z.ExtensionMethods.WithNamespace       | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-namespace-v.svg" alt="download" /></a><a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace/" target="_blank"><img src="http://entityframework-plus.net/images/nuget/extension-methods-with-namespace-d.svg" alt="" /></a>
+
+<a href="https://github.com/zzzprojects/EntityFramework-Plus/wiki/Downloads">More download options (Full and Standalone Version)</a>
+
+Stay updated with latest changes
+
+<a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
+<a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
+
 Free and open source library with over 1000 helpers and utility methods coded in C# and VB.NET. Five different architectures available.
 
 - [Product Page](http://www.zzzprojects.com/products/dotnet-development/extension-methods/)
-- [Downloads](http://www.zzzprojects.com/products/)
 - [Documentation](http://www.zzzprojects.com/documentations/dotnet/extension-methods/)
 
 Stay updated with latest changes
@@ -11,19 +27,13 @@ Stay updated with latest changes
 
 ## Contribution
 
-Supporting & developing FREE features takes **hundreds** and **thousands** of hours! If you like our product please consider making a donation to keep us running.
+Help us to make this library a **MUST-HAVE** by contributing
 
-<a href="http://www.zzzprojects.com/contribute/" target="_blank"><img src="http://www.zzzprojects.com/images/paypal-contribute-2.png" alt="Contribute" height="48"></a>
-
-Contribution isn't all about money!
  - Blog it
  - Comment it
  - Fork it
  - Star it
  - Share it
-
-A **HUGE thanks** for your extra support.
-
 
 ## More Projects
 
