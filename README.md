@@ -27,15 +27,16 @@ Stay updated with latest changes
 <a href="https://twitter.com/zzzprojects" target="_blank"><img src="http://www.zzzprojects.com/images/twitter_follow.png" alt="Twitter Follow" height="24" /></a>
 <a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
-## Contribution
-
-Help us to make this library a **MUST-HAVE** by contributing
+## Contribute
+The best way to contribute is by **spreading the word** about the library.
 
  - Blog it
  - Comment it
  - Fork it
  - Star it
  - Share it
+ 
+
 
 ## More Projects
 
