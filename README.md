@@ -28,7 +28,7 @@ Stay updated with latest changes
 <a href="https://www.facebook.com/zzzprojects/" target="_blank"><img src="http://www.zzzprojects.com/images/facebook_like.png" alt="Facebook Like" height="24" /></a>
 
 ## Contribute
-The best way to contribute is by **spreading the word** about the library.
+The best way to contribute is by **spreading the word** about the library:
 
  - Blog it
  - Comment it
