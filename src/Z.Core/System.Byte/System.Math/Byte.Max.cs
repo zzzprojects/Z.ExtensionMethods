@@ -18,4 +18,4 @@ public static partial class Extensions
     {
         return Math.Max(val1, val2);
     }
-R
+}
