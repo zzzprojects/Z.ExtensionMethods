@@ -50,6 +50,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Z.ExtensionMethods.WithNamespace">
+      <HintPath>..\..\..\..\..\..\OneDrive\Documents\Release\Z.ExtensionMethods\Z.ExtensionMethods.WithNamespace\NET40\Z.ExtensionMethods.WithNamespace.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
