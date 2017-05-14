@@ -3,7 +3,7 @@
 // Forum: https://github.com/zzzprojects/Z.ExtensionMethods/issues
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
-// Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+// Copyright ?ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Z.Core.Test
@@ -17,12 +17,17 @@ namespace Z.Core.Test
             // Type
             string @thisValid = "32";
             string @thisInvalid = "FizzBuzz";
+            string @thisNull = null;
+            string @thisEmpty = "";
 
             // Exemples
             int result1 = @thisValid.ToInt32OrDefault(); // return 32;
             int result2 = @thisInvalid.ToInt32OrDefault(); // return 0;
             int result3 = @thisInvalid.ToInt32OrDefault(-1); // return -1;
             int result4 = @thisInvalid.ToInt32OrDefault(() => -2); // return -2;
+
+            int result5 = @thisNull.ToInt32OrDefault(-1);
+            int result6 = thisEmpty.ToInt32OrDefault(-1);
 
             // Unit Test
             Assert.AreEqual(32, result1);
