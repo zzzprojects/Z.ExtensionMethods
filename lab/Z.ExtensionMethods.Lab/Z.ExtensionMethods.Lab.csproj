@@ -50,9 +50,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Z.ExtensionMethods.WithNamespace">
-      <HintPath>..\..\..\..\..\..\OneDrive\Documents\Release\Z.ExtensionMethods\Z.ExtensionMethods.WithNamespace\NET40\Z.ExtensionMethods.WithNamespace.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -86,6 +83,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Z.Core\Z.Core.csproj">
+      <Project>{02f009f8-720b-4cbd-98ff-f2c33f4441d5}</Project>
+      <Name>Z.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\Z.Data.SQLite\Z.Data.SQLite.csproj">
       <Project>{40cec7db-c8e6-4a24-8de7-9e0edf8708c6}</Project>
       <Name>Z.Data.SQLite</Name>

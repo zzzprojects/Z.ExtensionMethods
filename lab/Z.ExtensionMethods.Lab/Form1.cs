@@ -157,25 +157,18 @@ namespace Z.ExtensionMethods.Lab
         public Form1()
         {
             InitializeComponent();
+            object x1 = null;
 
-            var aaaa = (Attribute)null;
-    
-            StringBuilder sb = new StringBuilder("0123456789");
-            var b4 = "abc".Substring(1, 4);
-            char ch = '\'';
-            char ch2 = '"';
-            string tag = "a<b class='to>to'>c</b>d";
-            string tag2 = tag.StripHtml();
-            var a = new[] {"a", "b", "c"};
-            var b = new[] {"c", "d"};
+            var r1 = x1.ToInt32OrDefault(4);
+            var r2 = x1.ToInt32OrDefault(4, true);
 
-            using (var command = new SqlCommand())
-            {
-               // command.ExecuteDataSet();
-            }
+            //using (var command = new SqlCommand())
+            //{
+            //   // command.ExecuteDataSet();
+            //}
 
-            var c = new List<String[]> {a, b};
-            IEnumerable<string> d = c.MergeInnerEnumerable();
+            //var c = new List<String[]> {a, b};
+            //IEnumerable<string> d = c.MergeInnerEnumerable();
         }
 
         public void Misc()
