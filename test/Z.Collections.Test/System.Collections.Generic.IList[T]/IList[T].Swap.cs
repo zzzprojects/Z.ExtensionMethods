@@ -11,7 +11,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Z.Collections.Test
 {
     [TestClass]
-    public class System_Collections_Generic_ICollection_T_Swap
+    public class System_Collections_Generic_IList_T_Swap
     {
         [TestMethod]
         public void Swap()
@@ -27,11 +27,14 @@ namespace Z.Collections.Test
             example2.Swap("NoValueFound", "NoBaz");
             var example3 = new List<string>(stringList);
             example3.Swap(null, "NothingChanged");
+            var example4 = new List<string>(stringList);
+            example4.Swap("Bar", "NewBar");
 
             // Expected results
             var result1 = new List<string>() {"Foo", "Bar", "NewBaz"};
             var result2 = new List<string>(stringList);
             var result3 = new List<string>(stringList);
+            var result4 = example4.ElementAt(1).Equals("NewBar");
 
             // Unit Test
             Assert.IsTrue(example1.Contains("NewBaz"), "The collection should contain this value");
@@ -39,6 +42,7 @@ namespace Z.Collections.Test
             Assert.IsTrue(example1.SequenceEqual(result1), "The collection should have the replaced value");
             Assert.IsTrue(example2.SequenceEqual(result2), "The collection shouldn't have the replaced value");
             Assert.IsTrue(example3.SequenceEqual(result3), "The collection shouldn't have the replaced value");
+            Assert.IsTrue(result4, "The item in a collection shouldn't change it's position");
         }
     }
 }
