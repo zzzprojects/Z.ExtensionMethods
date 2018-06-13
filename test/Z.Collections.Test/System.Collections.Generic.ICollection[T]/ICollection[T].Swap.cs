@@ -21,18 +21,24 @@ namespace Z.Collections.Test
             stringList.AddRange("Foo", "Bar", "Baz");
 
             // Examples
-            var example1 = new List<string>(stringList).Swap("Baz", "NewBaz");
-            var example2 = new List<string>(stringList).Swap("NoValueFound", "NoBaz");
+            var example1 = new List<string>(stringList);
+            example1.Swap("Baz", "NewBaz");
+            var example2 = new List<string>(stringList);
+            example2.Swap("NoValueFound", "NoBaz");
+            var example3 = new List<string>(stringList);
+            example3.Swap(null, "NothingChanged");
 
             // Expected results
             var result1 = new List<string>() {"Foo", "Bar", "NewBaz"};
             var result2 = new List<string>(stringList);
+            var result3 = new List<string>(stringList);
 
             // Unit Test
             Assert.IsTrue(example1.Contains("NewBaz"), "The collection should contain this value");
             Assert.IsFalse(example2.Contains("NoBaz"), "The collection shouldn't contain this value");
             Assert.IsTrue(example1.SequenceEqual(result1), "The collection should have the replaced value");
             Assert.IsTrue(example2.SequenceEqual(result2), "The collection shouldn't have the replaced value");
+            Assert.IsTrue(example3.SequenceEqual(result3), "The collection shouldn't have the replaced value");
         }
     }
 }

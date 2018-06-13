@@ -4,7 +4,6 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
-using System;
 using System.Collections.Generic;
 
 public static partial class Extensions
@@ -19,24 +18,12 @@ public static partial class Extensions
     /// <returns>
     /// true if it succeeds, false if it fails.
     /// </returns>
-    public static ICollection<T> Swap<T>(this ICollection<T> @this, T oldValue, T newValue)
+    public static void Swap<T>(this ICollection<T> @this, T oldValue, T newValue)
     {
-        var collectionAsList = @this as IList<T>;
-
-        if (collectionAsList != null)
+        if (@this.Contains(oldValue))
         {
-            var oldIndex = collectionAsList.IndexOf(oldValue);
-
-            if(oldIndex < 0)
-                return collectionAsList;
-
-            collectionAsList.RemoveAt(oldIndex);
-            collectionAsList.Insert(oldIndex, newValue);
-            return collectionAsList;
+            @this.Remove(oldValue);
+            @this.Add(newValue);
         }
-
-        @this.Remove(oldValue);
-        @this.Add(newValue);
-        return @this;
     }
 }
