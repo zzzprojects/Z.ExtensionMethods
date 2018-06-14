@@ -21,12 +21,12 @@ public static partial class Extensions
     /// </returns>
     public static void Swap<T>(this IList<T> @this, T oldValue, T newValue)
     {
-            var oldIndex = @this.IndexOf(oldValue);
-
-            if (oldIndex < 0)
-                return;
-
+        var oldIndex = @this.IndexOf(oldValue);
+        while (oldIndex > 0)
+        {
             @this.RemoveAt(oldIndex);
             @this.Insert(oldIndex, newValue);
+            oldIndex = @this.IndexOf(oldValue);
+        }
     }
 }
