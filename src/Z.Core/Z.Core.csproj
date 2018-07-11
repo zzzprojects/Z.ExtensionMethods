@@ -508,6 +508,7 @@
     <Compile Include="System.Single\_CoreObject\Single.In.cs" />
     <Compile Include="System.Single\_CoreObject\Single.InRange.cs" />
     <Compile Include="System.Single\_CoreObject\Single.NotIn.cs" />
+    <Compile Include="System.String\String.EqualsIgnoreCase.cs" />
     <Compile Include="System.String\String.ToValidDateTimeOrNull.cs" />
     <Compile Include="System.String\String.Br2Nl.cs" />
     <Compile Include="System.String\String.IsPalindrome.cs" />
