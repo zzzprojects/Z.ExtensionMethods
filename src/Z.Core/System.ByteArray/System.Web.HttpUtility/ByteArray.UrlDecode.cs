@@ -6,10 +6,13 @@
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
 using System.Text;
+#if !NETSTANDARD
 using System.Web;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Converts a URL-encoded byte array into a decoded string using the specified decoding object.
     /// </summary>
@@ -34,4 +37,5 @@ public static partial class Extensions
     {
         return HttpUtility.UrlDecode(bytes, offset, count, e);
     }
+#endif
 }

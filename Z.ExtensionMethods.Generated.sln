@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9C296DC8-C7D0-4D87-8F49-BC811C7C7C0C}"
 EndProject
@@ -96,6 +96,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.Data.MySql", "generated\Z.ExtensionMethods.Data.MySql\Z.ExtensionMethods.Data.MySql.csproj", "{5B5E31BE-2921-48DF-A78F-898D29ED1C01}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.Data.SqlServerCe", "generated\Z.ExtensionMethods.Data.SqlServerCe\Z.ExtensionMethods.Data.SqlServerCe.csproj", "{23969445-2640-459E-AC0E-E2F991752B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.NetStandard20", "generated\Z.ExtensionMethods.NetStandard20\Z.ExtensionMethods.NetStandard20.csproj", "{A22152F7-43AD-470C-8217-9DEDEB7DBBDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithNamespace.NetStandard20", "generated\Z.ExtensionMethods.WithNamespace.NetStandard20\Z.ExtensionMethods.WithNamespace.NetStandard20.csproj", "{26821CEF-45EC-4EEA-98D2-CBBAB934D58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithObjectNamespace.NetStandard20", "generated\Z.ExtensionMethods.WithObjectNamespace.NetStandard20\Z.ExtensionMethods.WithObjectNamespace.NetStandard20.csproj", "{58605969-97C9-4431-B0C0-B87AB7A620FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithOneNamespace.NetStandard20", "generated\Z.ExtensionMethods.WithOneNamespace.NetStandard20\Z.ExtensionMethods.WithOneNamespace.NetStandard20.csproj", "{2453F5E9-89E4-4ACB-A133-E0D0BE1A5B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.ExtensionMethods.WithTwoNamespace.NetStandard20", "generated\Z.ExtensionMethods.WithTwoNamespace.NetStandard20\Z.ExtensionMethods.WithTwoNamespace.NetStandard20.csproj", "{AEE86AD6-4C8E-455D-B6CE-D6B614220DEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -275,6 +285,26 @@ Global
 		{23969445-2640-459E-AC0E-E2F991752B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23969445-2640-459E-AC0E-E2F991752B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23969445-2640-459E-AC0E-E2F991752B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22152F7-43AD-470C-8217-9DEDEB7DBBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22152F7-43AD-470C-8217-9DEDEB7DBBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22152F7-43AD-470C-8217-9DEDEB7DBBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22152F7-43AD-470C-8217-9DEDEB7DBBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26821CEF-45EC-4EEA-98D2-CBBAB934D58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26821CEF-45EC-4EEA-98D2-CBBAB934D58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26821CEF-45EC-4EEA-98D2-CBBAB934D58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26821CEF-45EC-4EEA-98D2-CBBAB934D58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58605969-97C9-4431-B0C0-B87AB7A620FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58605969-97C9-4431-B0C0-B87AB7A620FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58605969-97C9-4431-B0C0-B87AB7A620FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58605969-97C9-4431-B0C0-B87AB7A620FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2453F5E9-89E4-4ACB-A133-E0D0BE1A5B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2453F5E9-89E4-4ACB-A133-E0D0BE1A5B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2453F5E9-89E4-4ACB-A133-E0D0BE1A5B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2453F5E9-89E4-4ACB-A133-E0D0BE1A5B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE86AD6-4C8E-455D-B6CE-D6B614220DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE86AD6-4C8E-455D-B6CE-D6B614220DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE86AD6-4C8E-455D-B6CE-D6B614220DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE86AD6-4C8E-455D-B6CE-D6B614220DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -307,5 +337,13 @@ Global
 		{A29A70F3-60DC-494F-98F2-90E33EE0FBD5} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
 		{5B5E31BE-2921-48DF-A78F-898D29ED1C01} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
 		{23969445-2640-459E-AC0E-E2F991752B2B} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{A22152F7-43AD-470C-8217-9DEDEB7DBBDB} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{26821CEF-45EC-4EEA-98D2-CBBAB934D58F} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{58605969-97C9-4431-B0C0-B87AB7A620FF} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{2453F5E9-89E4-4ACB-A133-E0D0BE1A5B2B} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+		{AEE86AD6-4C8E-455D-B6CE-D6B614220DEB} = {234D0FBA-C701-4C89-A52D-1F41BCD58DC8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F05F4364-ACDF-43E4-BF27-621040293629}
 	EndGlobalSection
 EndGlobal

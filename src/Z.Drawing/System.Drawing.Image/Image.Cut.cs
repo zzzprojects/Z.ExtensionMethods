@@ -4,10 +4,14 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+
+#if !NETSTANDARD
 using System.Drawing;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     An Image extension method that cuts an image.
     /// </summary>
@@ -30,4 +34,5 @@ public static partial class Extensions
 
         return r;
     }
+#endif
 }

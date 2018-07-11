@@ -5,10 +5,13 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
+#if !NETSTANDARD
 using System.Runtime.Caching;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>A MemoryCache extension method that adds an or get existing.</summary>
     /// <typeparam name="TValue">Type of the value.</typeparam>
     /// <param name="cache">The cache to act on.</param>
@@ -70,4 +73,5 @@ public static partial class Extensions
 
         return item.Value;
     }
+#endif
 }

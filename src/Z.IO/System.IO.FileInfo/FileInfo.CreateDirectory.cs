@@ -5,7 +5,9 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System.IO;
+#if !NETSTANDARD
 using System.Security.AccessControl;
+#endif
 
 public static partial class Extensions
 {
@@ -54,6 +56,7 @@ public static partial class Extensions
         return Directory.CreateDirectory(@this.Directory.FullName);
     }
 
+#if !NETSTANDARD
     /// <summary>
     ///     Creates all the directories in the specified @this, applying the specified Windows security.
     /// </summary>
@@ -99,4 +102,5 @@ public static partial class Extensions
     {
         return Directory.CreateDirectory(@this.Directory.FullName, directorySecurity);
     }
+#endif
 }

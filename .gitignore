@@ -2,6 +2,7 @@
 [Bb]in/
 [Oo]bj/
 [Pp]ackages/
+.vs/
 *.suo
 *.user
 *.userprefs

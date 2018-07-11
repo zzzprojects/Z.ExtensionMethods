@@ -4,11 +4,14 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Drawing;
 using System.IO;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A byte[] extension method that converts the @this to an image.
     /// </summary>
@@ -21,4 +24,5 @@ public static partial class Extensions
             return Image.FromStream(ms);
         }
     }
+#endif
 }

@@ -5,10 +5,13 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
+#if !NETSTANDARD
 using System.Drawing;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Creates a  structure from a 32-bit ARGB value.
     /// </summary>
@@ -64,4 +67,5 @@ public static partial class Extensions
     {
         return Color.FromArgb(argb, green, blue);
     }
+#endif
 }

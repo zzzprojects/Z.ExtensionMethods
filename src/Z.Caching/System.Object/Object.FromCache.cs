@@ -6,10 +6,13 @@
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
 using System.Linq.Expressions;
+#if !NETSTANDARD
 using System.Runtime.Caching;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>A TKey extension method that from cache.</summary>
     /// <typeparam name="T">Generic type parameter.</typeparam>
     /// <typeparam name="TValue">Type of the value.</typeparam>
@@ -88,4 +91,5 @@ public static partial class Extensions
         string key = string.Concat("Z.Caching.FromCache;", typeof (TKey).FullName, valueFactory.ToString());
         return @this.FromCache(cache, key, valueFactory);
     }
+#endif
 }

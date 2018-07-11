@@ -4,10 +4,13 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web.Script.Serialization;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A string extension method that deserialize a string binary as &lt;T&gt;.
     /// </summary>
@@ -19,4 +22,5 @@ public static partial class Extensions
         var serializer = new JavaScriptSerializer();
         return serializer.Deserialize<T>(@this);
     }
+#endif
 }

@@ -4,10 +4,13 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A HttpResponse extension method that reloads the given this.
     /// </summary>
@@ -16,4 +19,5 @@ public static partial class Extensions
     {
         @this.Redirect(HttpContext.Current.Request.Url.ToString(), true);
     }
+#endif
 }

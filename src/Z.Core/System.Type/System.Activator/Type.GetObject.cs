@@ -8,6 +8,7 @@ using System;
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Creates a proxy for the well-known object indicated by the specified type and URL.
     /// </summary>
@@ -30,4 +31,5 @@ public static partial class Extensions
     {
         return Activator.GetObject(type, url, state);
     }
+#endif
 }

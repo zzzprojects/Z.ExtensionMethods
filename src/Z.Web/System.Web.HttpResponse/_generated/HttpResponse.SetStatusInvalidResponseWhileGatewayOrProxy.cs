@@ -4,10 +4,12 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web;
-
+#endif
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A HttpResponse extension method that sets the response to status code 502 (Web server received an invalid
     ///     response while acting as a gateway or proxy. ).
@@ -18,4 +20,5 @@ public static partial class Extensions
         @this.StatusCode = 502;
         @this.StatusDescription = "Web server received an invalid response while acting as a gateway or proxy. ";
     }
+#endif
 }

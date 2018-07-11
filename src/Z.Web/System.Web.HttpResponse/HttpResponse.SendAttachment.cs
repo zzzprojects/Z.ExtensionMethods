@@ -4,10 +4,13 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A HttpResponse extension method that sends an attachment.
     /// </summary>
@@ -22,4 +25,5 @@ public static partial class Extensions
         @this.ContentType = "";
         @this.End();
     }
+#endif
 }

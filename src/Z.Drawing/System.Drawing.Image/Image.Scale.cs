@@ -5,11 +5,15 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
+
+#if !NETSTANDARD
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     An Image extension method that scales an image to the specific ratio.
     /// </summary>
@@ -57,4 +61,5 @@ public static partial class Extensions
 
         return r;
     }
+#endif
 }

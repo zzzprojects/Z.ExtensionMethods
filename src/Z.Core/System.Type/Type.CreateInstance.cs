@@ -5,11 +5,14 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
+#if !NETSTANDARD
 using System.Globalization;
 using System.Reflection;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A Type extension method that creates an instance.
     /// </summary>
@@ -88,4 +91,5 @@ public static partial class Extensions
     {
         return (T) Activator.CreateInstance(@this, nonPublic);
     }
+#endif
 }

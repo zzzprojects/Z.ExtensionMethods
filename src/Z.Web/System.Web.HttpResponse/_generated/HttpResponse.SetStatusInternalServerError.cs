@@ -4,10 +4,12 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web;
-
+#endif
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A HttpResponse extension method that sets the response to status code 500 (Internal server error. ).
     /// </summary>
@@ -17,4 +19,5 @@ public static partial class Extensions
         @this.StatusCode = 500;
         @this.StatusDescription = "Internal server error. ";
     }
+#endif
 }

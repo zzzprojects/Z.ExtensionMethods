@@ -5,10 +5,13 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System.IO;
+#if !NETSTANDARD
 using System.Security.AccessControl;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Creates all directories and subdirectories in the specified @this.
     /// </summary>
@@ -99,4 +102,5 @@ public static partial class Extensions
     {
         return Directory.CreateDirectory(@this.FullName, directorySecurity);
     }
+#endif
 }

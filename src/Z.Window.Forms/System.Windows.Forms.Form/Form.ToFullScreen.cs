@@ -4,10 +4,14 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+
+#if !NETSTANDARD
 using System.Windows.Forms;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A Form extension method that set the window form to full screen mode to the specified screen.
     /// </summary>
@@ -19,4 +23,5 @@ public static partial class Extensions
         form.StartPosition = FormStartPosition.Manual;
         form.Bounds = Screen.AllScreens[screen].Bounds;
     }
+#endif
 }

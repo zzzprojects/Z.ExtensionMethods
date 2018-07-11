@@ -4,10 +4,13 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     A HttpResponse extension method that sets the response to status code 406 (Client browser does not accept the
     ///     MIME type of the requested page.).
@@ -18,4 +21,5 @@ public static partial class Extensions
         @this.StatusCode = 406;
         @this.StatusDescription = "Client browser does not accept the MIME type of the requested page.";
     }
+#endif
 }

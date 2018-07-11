@@ -5,10 +5,13 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
+#if !NETSTANDARD
 using System.Web;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Encodes a byte array into its equivalent string representation using base 64 digits, which is usable for
     ///     transmission on the URL.
@@ -22,4 +25,5 @@ public static partial class Extensions
     {
         return HttpServerUtility.UrlTokenEncode(input);
     }
+#endif
 }

@@ -4,10 +4,13 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+#if !NETSTANDARD
 using System.Web.UI;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Searches the current naming container for a server control with the specified id parameter.
     /// </summary>
@@ -19,4 +22,5 @@ public static partial class Extensions
     {
         return (@this.FindControl(id) as T);
     }
+#endif
 }

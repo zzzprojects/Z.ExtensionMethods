@@ -5,10 +5,13 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
+#if !NETSTANDARD
 using System.Drawing;
+#endif
 
 public static partial class Extensions
 {
+#if !NETSTANDARD
     /// <summary>
     ///     Translates the specified  structure to an HTML string color representation.
     /// </summary>
@@ -18,4 +21,5 @@ public static partial class Extensions
     {
         return ColorTranslator.ToHtml(c);
     }
+#endif
 }
