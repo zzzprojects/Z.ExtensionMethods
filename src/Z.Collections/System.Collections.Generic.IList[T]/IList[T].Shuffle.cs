@@ -5,28 +5,29 @@
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public static partial class Extensions
 {
+    static Random _random = new Random();
+
     /// <summary>
-    /// An IList&lt;T&gt; extension method that swaps item only when it exists in a collection.
+    /// An IList&lt;T&gt; extension method that shuffles items in a collection.
     /// </summary>
     /// <typeparam name="T">Generic type parameter.</typeparam>
     /// <param name="this">The @this to act on.</param>
-    /// <param name="oldValue">The old value.</param>
-    /// <param name="newValue">The new value.</param>
-    /// <returns>
-    /// true if it succeeds, false if it fails.
-    /// </returns>
-    public static void Swap<T>(this IList<T> @this, T oldValue, T newValue)
+    public static void Shuffle<T>(this IList<T> @this)
     {
-        var oldIndex = @this.IndexOf(oldValue);
-        while (oldIndex > 0)
+
+        int length = @this.Count;
+        for (int i = 0; i < length; i++)
         {
-            @this.RemoveAt(oldIndex);
-            @this.Insert(oldIndex, newValue);
-            oldIndex = @this.IndexOf(oldValue);
+            int randomIndex = i + _random.Next(length - i);
+            T item = @this.ElementAt(randomIndex);
+            @this[randomIndex] = @this[i];
+            @this[i] = item;
         }
     }
 }
