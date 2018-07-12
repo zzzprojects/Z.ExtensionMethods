@@ -16,7 +16,7 @@ namespace Z.Collections.Test
         [TestMethod]
         public void Shuffle()
         {
-            // Type
+            // Input
             var intList = new List<int>() { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
 
             // Examples
@@ -36,7 +36,8 @@ namespace Z.Collections.Test
             var shuffledResults = new List<List<int>> {example1, example2, example3, example4, example5}; 
 
             // Unit Test
-            Assert.IsTrue(!shuffledResults.Contains(intList), "The collection should be shuffled");
+            Assert.IsTrue(shuffledResults.All(e=> e.Count() == 20), "The shuffle should't change the collection length");
+            Assert.IsFalse(shuffledResults.Contains(intList), "The input collection should not be contained in shuffled results");
             Assert.IsTrue(shuffledResults.Distinct().Count() == shuffledResults.Count, "The shuffled results should be unique");
         }
     }
