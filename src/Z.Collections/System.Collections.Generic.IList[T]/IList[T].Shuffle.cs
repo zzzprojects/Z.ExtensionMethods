@@ -11,7 +11,7 @@ using System.Linq;
 
 public static partial class Extensions
 {
-    static Random _random = new Random();
+    private static readonly Random _random = new Random();
 
     /// <summary>
     /// An IList&lt;T&gt; extension method that shuffles items in a collection.
@@ -20,7 +20,6 @@ public static partial class Extensions
     /// <param name="this">The @this to act on.</param>
     public static void Shuffle<T>(this IList<T> @this)
     {
-
         int length = @this.Count;
         for (int i = 0; i < length; i++)
         {
