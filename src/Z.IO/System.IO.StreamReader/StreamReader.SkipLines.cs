@@ -4,14 +4,12 @@
 // License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: http://www.zzzprojects.com/
 // Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
-
 using System.IO;
-using System.Linq;
 
 public static partial class Extensions
 {
     /// <summary>
-    ///     Skips the specified number of lines in a stream reader based on its current position.
+    /// Skips the specified number of lines in a stream reader based on its current position.
     /// </summary>
     /// <param name="this">The stream reader.</param>
     /// <param name="skipCount">The number of lines to skip.</param>
