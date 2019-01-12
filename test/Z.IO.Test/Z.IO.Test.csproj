@@ -86,6 +86,7 @@
     <Compile Include="System.IO.FileInfo\FileInfo.GetDirectoryFullName.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.GetDirectoryName.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.GetFileNameWithoutExtension.cs" />
+    <Compile Include="System.IO.FileInfo\FileInfo.CountLines.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.GetPathRoot.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.HasExtension.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.IsPathRooted.cs" />
