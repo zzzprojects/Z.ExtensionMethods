@@ -91,6 +91,7 @@
     <Compile Include="System.IO.FileInfo\FileInfo.AppendAllLines.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.AppendAllText.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.ChangeExtension.cs" />
+    <Compile Include="System.IO.FileInfo\FileInfo.CountLines.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.CreateDirectory.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.EnsureDirectoryExists.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.GetDirectoryFullName.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="System.IO.FileInfo\FileInfo.WriteAllBytes.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.WriteAllLines.cs" />
     <Compile Include="System.IO.FileInfo\FileInfo.WriteAllText.cs" />
+    <Compile Include="System.IO.StreamReader\StreamReader.SkipLines.cs" />
     <Compile Include="System.IO.Stream\Stream.ReadToEnd.cs" />
     <Compile Include="System.IO.Stream\Stream.ToByteArray.cs" />
     <Compile Include="System.IO.Stream\Stream.ToMD5Hash.cs" />
