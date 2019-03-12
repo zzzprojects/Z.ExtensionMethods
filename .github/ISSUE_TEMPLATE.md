@@ -20,6 +20,4 @@ Or provide a project/solution that we can run to reproduce the issue.
 _Note: If you are not able to provide code we can run and that reproduce the issue, we will not be able to fix it either._
 
 ### Further technical details
-- EF version:
-- EF Plus version:
-- Database Provider:
+- Z.ExtensionMethods version:
