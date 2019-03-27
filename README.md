@@ -1,6 +1,6 @@
 Website: [https://csharp-extension.com](https://csharp-extension.com)
 
-# Enhance the .NET Framework with over 1000 extension methods.
+# C# Extension Methods | Enhance the .NET Framework and .NET Core with over 1000 extension methods.
 
 ## Download
 
