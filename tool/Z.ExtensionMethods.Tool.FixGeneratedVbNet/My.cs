@@ -1,9 +1,9 @@
-﻿// Copyright (c) 2015 ZZZ Projects. All rights reserved
-// Licensed under MIT License (MIT) (https://github.com/zzzprojects/Z.ExtensionMethods)
-// Website: http://www.zzzprojects.com/
-// Feedback / Feature Requests / Issues : http://zzzprojects.uservoice.com/forums/283927
-// All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
-
+﻿// Description: C# Extension Methods | Enhance the .NET Framework and .NET Core with over 1000 extension methods.
+// Website & Documentation: https://csharp-extension.com/
+// Issues: https://github.com/zzzprojects/Z.ExtensionMethods/issues
+// License (MIT): https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
+// More projects: https://zzzprojects.com/
+// Copyright © ZZZ Projects Inc. All rights reserved.
 using System.Configuration;
 
 namespace Z.ExtensionMethods.Tool.FixGeneratedVbNet

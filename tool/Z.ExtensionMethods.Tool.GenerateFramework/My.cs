@@ -1,9 +1,9 @@
-﻿// Description: C# Extension Methods Library to enhances the .NET Framework by adding hundreds of new methods. It drastically increases developers productivity and code readability. Support C# and VB.NET
-// Website & Documentation: https://github.com/zzzprojects/Z.ExtensionMethods
-// Forum: https://github.com/zzzprojects/Z.ExtensionMethods/issues
-// License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
-// More projects: http://www.zzzprojects.com/
-// Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
+﻿// Description: C# Extension Methods | Enhance the .NET Framework and .NET Core with over 1000 extension methods.
+// Website & Documentation: https://csharp-extension.com/
+// Issues: https://github.com/zzzprojects/Z.ExtensionMethods/issues
+// License (MIT): https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
+// More projects: https://zzzprojects.com/
+// Copyright © ZZZ Projects Inc. All rights reserved.
 using System.Configuration;
 
 namespace Z.ExtensionMethods.Tool.GenerateFramework
