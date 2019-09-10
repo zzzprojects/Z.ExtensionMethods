@@ -55,6 +55,6 @@ public static partial class Extensions
     /// <returns>A DateTimeOffset.</returns>
     public static DateTimeOffset SetTime(this DateTimeOffset current, int hour, int minute, int second, int millisecond)
     {
-        return new DateTime(current.Year, current.Month, current.Day, hour, minute, second, millisecond);
+        return new DateTimeOffset(current.Year, current.Month, current.Day, hour, minute, second, millisecond, current.Offset);
     }
 }
