@@ -4,7 +4,6 @@
 // License (MIT): https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: https://zzzprojects.com/
 // Copyright © ZZZ Projects Inc. All rights reserved.
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Z.Core.Test
@@ -36,10 +35,10 @@ namespace Z.Core.Test
                 };
 
                 // Act
-                foreach (var validEmail in validEmails)
+                foreach (var email in validEmails)
                 {
                     // Act
-                    var result = validEmail.IsValidEmail();
+                    var result = email.IsValidEmail();
 
                     // Assert
                     Assert.IsTrue(result);
@@ -63,16 +62,16 @@ namespace Z.Core.Test
                     "email@example.com (Joe Smith)",
                     "email@example",
                     "email@-example.com",
-                    //"email@example.web", // Should not be valid, not a top level domain, how should we handle this outside regex? Lookup dictionary of all valid top level domains?
+                    //"email@example.web", // Should not be valid, not a top level domain, how should we handle this outside regex? Lookup dictionary of all valid top level domains? https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
                     "email@example..com",
                     "Abc..123@example.com"
                 };
 
                 // Act
-                foreach (var validEmail in invalidEmails)
+                foreach (var email in invalidEmails)
                 {
                     // Act
-                    var result = validEmail.IsValidEmail();
+                    var result = email.IsValidEmail();
 
                     // Assert
                     Assert.IsFalse(result);
