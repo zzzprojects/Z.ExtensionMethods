@@ -21,17 +21,13 @@ Z.ExtensionMethods.WithTwoNamespace    | <a href="https://www.nuget.org/packages
 Z.ExtensionMethods.WithNamespace       | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-namespace-v.svg" alt="download" /></a> <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-namespace-d.svg" alt="" /></a>
 
 <a href="https://github.com/zzzprojects/EntityFramework-Plus/wiki/Downloads">More download options (Full and Standalone Version)</a>
-# What's Html Agility Pack (HAP)?
-It is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT (you actually don't HAVE to understand XPATH nor XSLT to use it, don't worry...). It is a .NET code library that allows you to parse "out of the web" HTML files. The parser is very tolerant with "real world" malformed HTML. The object model is very similar to what proposes System.Xml, but for HTML documents (or streams).
-
-NuGet: https://www.nuget.org/packages/HtmlAgilityPack/
 
 ## Usefull links
 
 - [Website](https://csharp-extension.com/)
 - [Documentation](https://csharp-extension.com/en/method/1002000/fileinfo-readallbytes)
 - [Online Examples](https://csharp-extension.com/en/online-example/) 
-- You can also consult tons of extension method questions on 
+- You can also consult tons of extension methods questions on 
 [Stack Overflow](https://stackoverflow.com/questions/tagged/extension-methods)
 
 ## Contribute
