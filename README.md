@@ -8,7 +8,8 @@ This library is powered by [Entity Framework Extensions](http://entityframework-
 </kbd>
 </a>
 
-# C# Extension Methods | Enhance the .NET Framework and .NET Core with over 1000 extension methods.
+# C# Extension Methods 
+Enhance the .NET Framework and .NET Core with over 1000 extension methods.
 
 ## Download
 
