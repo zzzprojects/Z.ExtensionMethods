@@ -23,7 +23,7 @@ Z.ExtensionMethods.WithNamespace       | <a href="https://www.nuget.org/packages
 
 <a href="https://github.com/zzzprojects/EntityFramework-Plus/wiki/Downloads">More download options (Full and Standalone Version)</a>
 
-## Usefull links
+## Useful links
 
 - [Website](https://csharp-extension.com/)
 - [Documentation](https://csharp-extension.com/en/method/1002000/fileinfo-readallbytes)
