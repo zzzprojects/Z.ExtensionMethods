@@ -15,6 +15,6 @@ public static partial class Extensions
     /// <returns>true if valid email, false if not.</returns>
     public static bool IsValidEmail(this string obj)
     {
-        return Regex.IsMatch(obj, @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z0-9]{1,30})(\]?)$");
+        return Regex.IsMatch(obj, @"^\w+([-+.']\w+)*@(\[*\w+)([-.]\w+)*\.\w+([-.]\w+\])*$");
     }
 }
