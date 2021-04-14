@@ -4,18 +4,14 @@
 // License (MIT): https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: https://zzzprojects.com/
 // Copyright © ZZZ Projects Inc. All rights reserved.
-using System;
-using System.Linq;
 
-public static partial class Extensions
-{
+public static partial class Extensions {
     /// <summary>
-    ///     A string extension method that extracts the number described by @this.
+    ///     A string extension method that removes the excess white spaces described by @this.
     /// </summary>
     /// <param name="this">The @this to act on.</param>
-    /// <returns>The extracted number.</returns>
-    public static string ExtractNumber(this string @this)
-    {
-        return new string(@this.ToCharArray().Where(Char.IsNumber).ToArray());
+    /// <returns>A string.</returns>
+    public static string RemoveExcessWhiteSpaces(this string @this) {
+        return @this.Replace("  ", "").Trim();
     }
 }

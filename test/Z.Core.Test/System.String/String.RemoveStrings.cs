@@ -6,22 +6,22 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Z.Core.Test
-{
+namespace Z.Core.Test {
     [TestClass]
-    public class System_String_RemoveNumber
-    {
+    public class System_String_RemovStrings {
         [TestMethod]
-        public void RemoveNumber()
-        {
+        public void RemoveStrings() {
             // Type
-            string @this = "Fizz1Buzz2";
+            string @this = "Fizz  Buzz ";
+            string this2 = "Fizz  Buzz   ";
 
-            // Exemples
-            string result = @this.RemoveNumber(); // return "FizzBuzz";
+            // Examples
+            string result = @this.RemoveStrings(false, "Buz", "Fiz"); // return "z  z ";
+            string result2 = this2.RemoveStrings(true, "Buz", "Fiz"); // return "zz";
 
             // Unit Test
-            Assert.AreEqual("FizzBuzz", result);
+            Assert.AreEqual("z  z ", result);
+            Assert.AreEqual("zz", result2);
         }
     }
 }

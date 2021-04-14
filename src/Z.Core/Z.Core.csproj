@@ -509,6 +509,9 @@
     <Compile Include="System.Single\_CoreObject\Single.InRange.cs" />
     <Compile Include="System.Single\_CoreObject\Single.NotIn.cs" />
     <Compile Include="System.String\String.EqualsIgnoreCase.cs" />
+    <Compile Include="System.String\String.RemoveNewLines.cs" />
+    <Compile Include="System.String\String.RemoveWords.cs" />
+    <Compile Include="System.String\String.RemoveExcessWhiteSpaces.cs" />
     <Compile Include="System.String\String.ToValidDateTimeOrNull.cs" />
     <Compile Include="System.String\String.Br2Nl.cs" />
     <Compile Include="System.String\String.IsPalindrome.cs" />
@@ -547,8 +550,8 @@
     <Compile Include="System.String\String.NullIfEmpty.cs" />
     <Compile Include="System.String\String.PathCombine.cs" />
     <Compile Include="System.String\String.RemoveDiacritics.cs" />
-    <Compile Include="System.String\String.RemoveLetter.cs" />
-    <Compile Include="System.String\String.RemoveNumber.cs" />
+    <Compile Include="System.String\String.RemoveLetters.cs" />
+    <Compile Include="System.String\String.RemoveNumbers.cs" />
     <Compile Include="System.String\String.RemoveWhere.cs" />
     <Compile Include="System.String\String.Repeat.cs" />
     <Compile Include="System.String\String.Replace.cs" />

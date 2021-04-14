@@ -16,6 +16,6 @@ public static partial class Extensions
     /// <returns>The extracted letter.</returns>
     public static string ExtractLetter(this string @this)
     {
-        return new string(@this.ToCharArray().Where(x => Char.IsLetter(x)).ToArray());
+        return new string(@this.ToCharArray().Where(Char.IsLetter).ToArray());
     }
 }

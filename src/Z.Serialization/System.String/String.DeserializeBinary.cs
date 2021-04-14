@@ -15,7 +15,7 @@ public static partial class Extensions
     /// </summary>
     /// <typeparam name="T">Generic type parameter.</typeparam>
     /// <param name="this">The @this to act on.</param>
-    /// <returns>The desrialize binary as &lt;T&gt;</returns>
+    /// <returns>The deserialize binary as &lt;T&gt;</returns>
     public static T DeserializeBinary<T>(this string @this)
     {
         using (var stream = new MemoryStream(Encoding.Default.GetBytes(@this)))
@@ -31,7 +31,7 @@ public static partial class Extensions
     /// <typeparam name="T">Generic type parameter.</typeparam>
     /// <param name="this">The @this to act on.</param>
     /// <param name="encoding">The encoding.</param>
-    /// <returns>The desrialize binary as &lt;T&gt;</returns>
+    /// <returns>The deserialize binary as &lt;T&gt;</returns>
     public static T DeserializeBinary<T>(this string @this, Encoding encoding)
     {
         using (var stream = new MemoryStream(encoding.GetBytes(@this)))

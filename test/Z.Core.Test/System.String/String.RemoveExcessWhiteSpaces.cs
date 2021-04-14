@@ -9,19 +9,18 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Z.Core.Test
 {
     [TestClass]
-    public class System_String_RemoveLetter
-    {
+    public class System_String_RemoveRedundantWhiteSpaces {
         [TestMethod]
-        public void RemoveLetter()
+        public void RemoveExcessWhiteSpaces()
         {
             // Type
-            string @this = "Fizz1Buzz2";
+            string @this = "   Fizz      Buzz ";
 
-            // Exemples
-            string result = @this.RemoveLetter(); // return "12";
+            // Examples
+            string result = @this.RemoveExcessWhiteSpaces(); // return "FizzBuzz";
 
             // Unit Test
-            Assert.AreEqual("12", result);
+            Assert.AreEqual("FizzBuzz", result);
         }
     }
 }

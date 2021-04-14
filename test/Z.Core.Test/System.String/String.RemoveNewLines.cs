@@ -6,22 +6,25 @@
 // Copyright © ZZZ Projects Inc. All rights reserved.
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Z.Core.Test
-{
+namespace Z.Core.Test {
     [TestClass]
-    public class System_String_ExtractNumber
-    {
+    public class System_String_RemoveNewLines {
         [TestMethod]
-        public void ExtractNumber()
-        {
+        public void RemoveNewLines() {
             // Type
-            string @this = "Fizz1Buzz2";
+            string @this = @"Fizz
+                             Buzz ";
+
+            string @this2 = @"Fizz
+                            Buzz ";
 
             // Examples
-            string result = @this.ExtractNumber(); // return "12";
+            string result = @this.RemoveNewLines(); // return "Fizz                             Buzz ";
+            string result2 = @this2.RemoveNewLines(true); // return "FizzBuzz";
 
             // Unit Test
-            Assert.AreEqual("12", result);
+            Assert.AreEqual("Fizz                             Buzz ", result);
+            Assert.AreEqual("FizzBuzz", result2);
         }
     }
 }
