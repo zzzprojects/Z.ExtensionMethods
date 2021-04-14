@@ -9,19 +9,19 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Z.Core.Test
 {
     [TestClass]
-    public class System_String_ExtractNumber
+    public class System_String_RemoveNumbers
     {
         [TestMethod]
-        public void ExtractNumber()
+        public void RemoveNumbers()
         {
             // Type
             string @this = "Fizz1Buzz2";
 
-            // Examples
-            string result = @this.ExtractNumber(); // return "12";
+            // Exemples
+            string result = @this.RemoveNumbers(); // return "FizzBuzz";
 
             // Unit Test
-            Assert.AreEqual("12", result);
+            Assert.AreEqual("FizzBuzz", result);
         }
     }
 }

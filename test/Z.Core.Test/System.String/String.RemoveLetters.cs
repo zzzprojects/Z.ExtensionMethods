@@ -4,18 +4,24 @@
 // License (MIT): https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: https://zzzprojects.com/
 // Copyright © ZZZ Projects Inc. All rights reserved.
-using System;
-using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-public static partial class Extensions
+namespace Z.Core.Test
 {
-    /// <summary>
-    ///     A string extension method that removes the letter described by @this.
-    /// </summary>
-    /// <param name="this">The @this to act on.</param>
-    /// <returns>A string.</returns>
-    public static string RemoveLetter(this string @this)
+    [TestClass]
+    public class System_String_RemoveLetters
     {
-        return new string(@this.ToCharArray().Where(x => !Char.IsLetter(x)).ToArray());
+        [TestMethod]
+        public void RemoveLetter()
+        {
+            // Type
+            string @this = "Fizz1Buzz2";
+
+            // Exemples
+            string result = @this.RemoveLetters(); // return "12";
+
+            // Unit Test
+            Assert.AreEqual("12", result);
+        }
     }
 }

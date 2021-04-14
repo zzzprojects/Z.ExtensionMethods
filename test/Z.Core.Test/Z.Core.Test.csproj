@@ -147,6 +147,9 @@
     <Compile Include="System.Object\Object.ToStringSafe.cs" />
     <Compile Include="System.Random\Random.CoinToss.cs" />
     <Compile Include="System.Random\Random.OneOf.cs" />
+    <Compile Include="System.String\String.RemoveNewLines.cs" />
+    <Compile Include="System.String\String.RemoveStrings.cs" />
+    <Compile Include="System.String\String.RemoveExcessWhiteSpaces.cs" />
     <Compile Include="System.String\String.StripHtml.cs" />
     <Compile Include="System.String\String.Br2Nl.cs" />
     <Compile Include="System.String\String.ConcatWith.cs" />
@@ -197,8 +200,8 @@
     <Compile Include="System.String\String.NullIfEmpty.cs" />
     <Compile Include="System.String\String.PathCombine.cs" />
     <Compile Include="System.String\String.RemoveDiacritics.cs" />
-    <Compile Include="System.String\String.RemoveLetter.cs" />
-    <Compile Include="System.String\String.RemoveNumber.cs" />
+    <Compile Include="System.String\String.RemoveLetters.cs" />
+    <Compile Include="System.String\String.RemoveNumbers.cs" />
     <Compile Include="System.String\String.RemoveWhere.cs" />
     <Compile Include="System.String\String.Repeat.cs" />
     <Compile Include="System.String\String.Replace.cs" />
