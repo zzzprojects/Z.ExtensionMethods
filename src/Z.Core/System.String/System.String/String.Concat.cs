@@ -3,42 +3,42 @@
 // Issues: https://github.com/zzzprojects/Z.ExtensionMethods/issues
 // License (MIT): https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
 // More projects: https://zzzprojects.com/
-// Copyright © ZZZ Projects Inc. All rights reserved.
+// Copyright Â© ZZZ Projects Inc. All rights reserved.
 using System;
 
 public static partial class Extensions
 {
     /// <summary>
-    ///     Concatenates two specified instances of .
+    ///     Concatenates two strings.
     /// </summary>
     /// <param name="str0">The first string to concatenate.</param>
     /// <param name="str1">The second string to concatenate.</param>
-    /// <returns>The concatenation of  and .</returns>
+    /// <returns>The concatenation of str0 and str1.</returns>
     public static String Concat(this String str0, String str1)
     {
         return String.Concat(str0, str1);
     }
 
     /// <summary>
-    ///     Concatenates three specified instances of .
+    ///     Concatenates three strings.
     /// </summary>
     /// <param name="str0">The first string to concatenate.</param>
     /// <param name="str1">The second string to concatenate.</param>
     /// <param name="str2">The third string to concatenate.</param>
-    /// <returns>The concatenation of , , and .</returns>
+    /// <returns>The concatenation of str0, str1, and str2.</returns>
     public static String Concat(this String str0, String str1, String str2)
     {
         return String.Concat(str0, str1, str2);
     }
 
     /// <summary>
-    ///     Concatenates four specified instances of .
+    ///     Concatenates four strings.
     /// </summary>
     /// <param name="str0">The first string to concatenate.</param>
     /// <param name="str1">The second string to concatenate.</param>
     /// <param name="str2">The third string to concatenate.</param>
     /// <param name="str3">The fourth string to concatenate.</param>
-    /// <returns>The concatenation of , , , and .</returns>
+    /// <returns>The concatenation of str0, str1, str2, and str3.</returns>
     public static String Concat(this String str0, String str1, String str2, String str3)
     {
         return String.Concat(str0, str1, str2, str3);
