@@ -16,13 +16,15 @@ namespace Z.Core.Test
         public void SetTime()
         {
             // Type
-            DateTimeOffset @thisToday = DateTimeOffset.Now;
+            DateTimeOffset @thisToday = DateTimeOffset.UtcNow;
 
             // Exemples
             DateTimeOffset result = @thisToday.SetTime(15); // Set hours to 15
 
             // Unit Test
             Assert.AreEqual(15, result.Hour);
+
+            Assert.AreEqual(thisToday.Offset, result.Offset);
         }
     }
 }
