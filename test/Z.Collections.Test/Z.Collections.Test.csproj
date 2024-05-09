@@ -78,6 +78,7 @@
     <Compile Include="System.Collections.Generic.ICollection[T]\ICollection[T].RemoveRangeIf.cs" />
     <Compile Include="System.Collections.Generic.ICollection[T]\ICollection[T].RemoveRangeIfContains.cs" />
     <Compile Include="System.Collections.Generic.ICollection[T]\ICollection[T].RemoveWhere.cs" />
+    <Compile Include="System.Collections.Generic.IList[T]\IList[T].Shuffle.cs" />
     <Compile Include="System.Collections.Generic.IList[T]\IList[T].Swap.cs" />
     <Compile Include="System.Collections.Generic.IDictionary[string, object]\IDictionary[string, object].ToExpando.cs" />
     <Compile Include="System.Collections.Generic.IDictionary[string, string]\IDictionary[string, string].ToNameValueCollection.cs" />
