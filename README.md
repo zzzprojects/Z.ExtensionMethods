@@ -1,46 +1,52 @@
-## Library Powered By
-
-This library is powered by [Entity Framework Extensions](http://entityframework-extensions.net/)
-
-<a href="http://entityframework-extensions.net/?z=extensionmethods">
-<kbd>
-<img src="https://zzzprojects.github.io/images/logo/entityframework-extensions-pub.jpg" alt="Entity Framework Extensions" />
-</kbd>
-</a>
-
 # C# Extension Methods 
 Enhance the .NET Framework and .NET Core with over 1000 extension methods.
 
-## Download
+Read more on our [Website](https://csharp-extension.com/)
 
-Full Version | NuGet
------------- | :-------------:
-Z.ExtensionMethods **_(Recommended)_**       | <a href="https://www.nuget.org/packages/Z.ExtensionMethods/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-v.svg" alt="download" /></a> <a href="https://www.nuget.org/packages/Z.ExtensionMethods/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-d.svg" alt="" /></a>
-Z.ExtensionMethods.WithObjectNamespace | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithObjectNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-object-namespace-v.svg" alt="download" /></a> <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithObjectNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-object-namespace-d.svg" alt="" /></a>
-Z.ExtensionMethods.WithOneNamespace    | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithOneNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-one-namespace-v.svg" alt="download" /></a> <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithOneNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-one-namespace-d.svg" alt="" /></a>
-Z.ExtensionMethods.WithTwoNamespace    | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithTwoNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-two-namespace-v.svg" alt="download" /></a> <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithTwoNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-two-namespace-d.svg" alt="" /></a>
-Z.ExtensionMethods.WithNamespace       | <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-namespace-v.svg" alt="download" /></a> <a href="https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace/" target="_blank"><img src="https://zzzprojects.github.io/images/nuget/extension-methods-with-namespace-d.svg" alt="" /></a>
+## Downloads
 
-<a href="https://github.com/zzzprojects/EntityFramework-Plus/wiki/Downloads">More download options (Full and Standalone Version)</a>
+### Z.ExtensionMethods **_(Recommended)_** 
 
-## Useful links
+[![nuget](https://img.shields.io/nuget/v/Z.ExtensionMethods?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods)
+[![nuget](https://img.shields.io/nuget/dt/Z.ExtensionMethods?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods)
 
-- [Website](https://csharp-extension.com/)
-- [Documentation](https://csharp-extension.com/en/method/1002000/fileinfo-readallbytes)
-- [Online Examples](https://csharp-extension.com/en/online-example/) 
-- You can also consult tons of extension methods questions on 
-[Stack Overflow](https://stackoverflow.com/questions/tagged/extension-methods)
+```
+PM> NuGet\Install-Package Z.ExtensionMethods
+```
 
-## Contribute
+```
+> dotnet add package Z.ExtensionMethods
+```
 
-The best way to contribute is by **spreading the word** about the library:
+### Z.ExtensionMethods.WithObjectNamespace
 
- - Blog it
- - Comment it
- - Star it
- - Share it
- 
-A **HUGE THANKS** for your help.
+[![nuget](https://img.shields.io/nuget/v/Z.ExtensionMethods.WithObjectNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithObjectNamespace)
+[![nuget](https://img.shields.io/nuget/dt/Z.ExtensionMethods.WithObjectNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithObjectNamespace)
+
+### Z.ExtensionMethods.WithOneNamespace
+
+[![nuget](https://img.shields.io/nuget/v/Z.ExtensionMethods.WithOneNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithOneNamespace)
+[![nuget](https://img.shields.io/nuget/dt/Z.ExtensionMethods.WithOneNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithOneNamespace)
+
+### Z.ExtensionMethods.WithTwoNamespace
+
+[![nuget](https://img.shields.io/nuget/v/Z.ExtensionMethods.WithTwoNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithTwoNamespace)
+[![nuget](https://img.shields.io/nuget/dt/Z.ExtensionMethods.WithTwoNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithTwoNamespace)
+
+### Z.ExtensionMethods.WithNamespace
+
+[![nuget](https://img.shields.io/nuget/v/Z.ExtensionMethods.WithNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace)
+[![nuget](https://img.shields.io/nuget/dt/Z.ExtensionMethods.WithNamespace?logo=nuget&style=flat-square)](https://www.nuget.org/packages/Z.ExtensionMethods.WithNamespace)
+
+## Sponsors
+
+ZZZ Projects owns and maintains **Z.ExtensionMethods** as part of our [mission](https://zzzprojects.com/mission) to add value to the .NET community
+
+Through [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=zzzprojects&utm_medium=zextensionmethods) and [Dapper Plus](https://dapper-plus.net/?utm_source=zzzprojects&utm_medium=zextensionmethods), we actively sponsor and help key open-source libraries grow.
+
+[![Entity Framework Extensions](https://raw.githubusercontent.com/zzzprojects/Z.ExtensionMethods/master/entity-framework-extensions-sponsor.png)](https://entityframework-extensions.net/bulk-insert?utm_source=zzzprojects&utm_medium=zextensionmethods)
+
+[![Dapper Plus](https://raw.githubusercontent.com/zzzprojects/Z.ExtensionMethods/master/dapper-plus-sponsor.png)](https://dapper-plus.net/bulk-insert?utm_source=zzzprojects&utm_medium=zextensionmethods)
 
 ## More Projects
 
