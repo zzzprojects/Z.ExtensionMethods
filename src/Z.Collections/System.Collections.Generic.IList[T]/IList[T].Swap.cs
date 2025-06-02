@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public static partial class Extensions
 {
     /// <summary>
-    /// An ICollection&lt;T&gt; extension method that swaps item only when it exists in a collection.
+    /// An IList&lt;T&gt; extension method that swaps item only when it exists in a collection.
     /// </summary>
     /// <typeparam name="T">Generic type parameter.</typeparam>
     /// <param name="this">The @this to act on.</param>
